@@ -170,12 +170,12 @@ h6::selection
 	font-weight: 500;
 	color: #777777 !important;
 }
-::input-placeholder
-{
-	font-size: 16px !important;
-	font-weight: 500;
-	color: #777777 !important;
-}
+/*::input-placeholder*/
+/*{*/
+/*	font-size: 16px !important;*/
+/*	font-weight: 500;*/
+/*	color: #777777 !important;*/
+/*}*/
 .form-control
 {
 	color: #db5246;
@@ -818,7 +818,7 @@ section
 }
 .red_button
 {
-	display: -webkit-inline-box;
+	/*display: -webkit-inline-box;*/
 	display: -moz-inline-box;
 	display: -ms-inline-flexbox;
 	display: -webkit-inline-flex;
@@ -883,7 +883,7 @@ section
 }
 .product_details_title p
 {
-	color: #;
+	/*color: #;*/
 }
 
 /*********************************
@@ -1093,7 +1093,7 @@ section
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-.input_ph::input-placeholder
+/*.input_ph::input-placeholder*/
 {
 	font-size: 16px !important;
 	font-weight: 400;
@@ -1212,12 +1212,12 @@ textarea:hover
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-::input-placeholder
-{
-	font-size: 14px !important;
-	font-weight: 400;
-	color: #b9b4c7 !important;
-}
+/*::input-placeholder*/
+/*{*/
+/*	font-size: 14px !important;*/
+/*	font-weight: 400;*/
+/*	color: #b9b4c7 !important;*/
+/*}*/
 .newsletter_submit_btn
 {
 	width: 160px;
