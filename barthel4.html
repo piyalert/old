@@ -35,7 +35,7 @@
                             <ul class="navbar_menu">
                                 <li><a href="#">Barthel ADL index</a></li>
                                 <li><a href="#">Chula ADL Index</a></li>
-                                <li><a href="takecare.html">การดูแลผู้สูงอายุ</a></li>
+                                <li><a href="#">การดูแลผู้สูงอายุ</a></li>
                                 <li><a href="#">contact</a></li>
                             </ul>
                             <div class="hamburger_container">
@@ -52,50 +52,56 @@
     <div class="container" style="padding-top: 120px;">
         <nav aria-label="...">
             <ul class="pagination pagination-lg justify-content-center">
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="adl2.html">2</a></li>
-                <li class="page-item"><a class="page-link" href="adl3.html">3</a></li>
-                <li class="page-item"><a class="page-link" href="adl4.html">4</a></li>
-                <li class="page-item"><a class="page-link" href="adl5.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="barthel1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="barthel2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="barthel3.html">3</a></li>
+                <li class="page-item active"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="barthel5.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="barthel6.html">6</a></li>
+                <li class="page-item"><a class="page-link" href="barthel7.html">7</a></li>
+                <li class="page-item"><a class="page-link" href="barthel8.html">8</a></li>
+                <li class="page-item"><a class="page-link" href="barthel9.html">9</a></li>
+                <li class="page-item"><a class="page-link" href="barthel10.html">10</a></li>
             </ul>
         </nav>
 
+        <div class="container" style="padding-bottom: 30px; padding-top: 20px; text-align: center">
+            <form action="resultbarthel.html">
+                <input type="submit" value="ส่งแบบทดสอบ">
+            </form> 
+        </div>   
+
         <div>
-            <h2>ข้อที่ 1 ไก่กาอาลาเร่</h2>
+            <h2>ข้อที่ 4 ใช้ห้องน้ำ (Toilet use)</h2>
             <hr>
         </div>
 
         <div class="row">
 
-            <div class="col-md-6 pt-2">
+            <div class="col-md-4 pt-2">
                 <div class="card">
-                    <img class="card-img" src="images/2_home.jpg" alt="Card image" style="height: 300px; cursor:pointer;" onclick="selectChoose(1)">
+                    <img class="card-img" src="images/bar4-1.jpg" alt="Card image" style="height: 300px; cursor:pointer;" onclick="selectChoose(1)">
                     <div class="card-footer text-center">
                         <input type="radio" id="customRadio1" name="customRadio">
+                        <h4>ช่วยตัวเองไม่ได้</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pt-2">
+            <div class="col-md-4 pt-2">
                 <div class="card">
-                    <img class="card-img" src="images/2_home.jpg" alt="Card image" style="height: 300px; cursor:pointer;" onclick="selectChoose(2)">
+                    <img class="card-img" src="images/bar4-2.jpg" alt="Card image" style="height: 300px; cursor:pointer;" onclick="selectChoose(2)">
                     <div class="card-footer text-center">
                         <input type="radio" id="customRadio2" name="customRadio">
+                        <h4>ทำเองได้บ้าง (อย่างน้อยทำความสะอาดตัวเองได้หลังจากเสร็จธุระ) แต่ต้องการความช่วยเหลือในบางสิ่ง</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pt-2">
+            <div class="col-md-4 pt-2">
                 <div class="card">
-                    <img class="card-img" src="images/2_home.jpg" alt="Card image" style="height: 300px; cursor:pointer;" onclick="selectChoose(3)">
+                    <img class="card-img" src="images/bar4-3.jpg" alt="Card image" style="height: 300px; cursor:pointer;" onclick="selectChoose(3)">
                     <div class="card-footer text-center">
                         <input type="radio" id="customRadio3" name="customRadio">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-46 pt-2">
-                <div class="card">
-                    <img class="card-img" src="images/2_home.jpg" alt="Card image" style="height: 300px; cursor:pointer;" onclick="selectChoose(4)">
-                    <div class="card-footer text-center">
-                        <input type="radio" id="customRadio4" name="customRadio">
+                        <h4>ช่วยตัวเองได้ดี (ขึ้นนั่งและลงจากโถส้วมเองได้ ทำความสะอาดได้เรียบร้อยหลังจากเสร็จธุระถอดใส่เสื้อผ้าได้เรียบร้อย)</h4>
                     </div>
                 </div>
             </div>
