@@ -1684,3 +1684,11 @@ section
 {
 	color: #fe4c50;
 }
+
+/*cherry css*/
+.zoom{
+	transition: transform .2s;
+}
+.zoom:hover {
+	transform: scale(1.1);
+}
