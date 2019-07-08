@@ -1,10 +1,10 @@
 <?php
-require_once __DIR__.'/../model/UserModel.php';
-$MUser = new UserModel();
+require_once __DIR__.'/../model/DataJson.php';
+$FileJson = new DataJson();
 
-$input_name = $MUser->getInput('name','');
+$input_name = isset($_REQUEST['name'])?$_REQUEST['name']:'';
 if($input_name!==''){
-    $input_age = $MUser->getInput('age','50');
+    $input_age = isset($_REQUEST['age'])?$_REQUEST['age']:'50';
     $_SESSION['U_NAME'] = $input_name;
     $_SESSION['U_AGE']= $input_age;
     $_SESSION['T_EQ'] = 1;
@@ -125,16 +125,32 @@ $TESTS[]=[
 
 
 //----------------------------------------------------
-$sq = $MUser->getInput('sq','-');
-$select = $MUser->getInput('select','-');
+$sq = isset($_REQUEST['sq'])?$_REQUEST['sq']:'-';
+$select = isset($_REQUEST['select'])?$_REQUEST['select']:'-';
 if($sq!='-' && $select!='-'){
     $ss = $_SESSION['T_SELECT'] ;
     $ss[$sq-1] = $select;
 
-    $_SESSION['T_SELECT'] = $ss;
-    $_SESSION['T_EQ'] = intval($sq) + 1;
-    $SET_EQ = intval($sq) + 1;
-    echo json_encode($ss);exit;
+    if( intval($SET_EQ) >= count($TESTS)){
+        $score = 0;
+        foreach ($ss as $key=>$item){
+            $i_score = $TESTS[$key]['choice'][$item-1]['score'];
+            $score = $score + $i_score;
+        }
+        $_SESSION['T_SCORE'] = $score;
+
+        $name  =  $_SESSION['U_NAME'];
+        $type = $_SESSION['U_AGE'];
+        $FileJson->writeFileBarthelADL($name,$type,$score);
+        header( "location: /old/barthel-result.php" );
+        exit(0);
+    }else{
+        $_SESSION['T_SELECT'] = $ss;
+        $_SESSION['T_EQ'] = intval($sq) + 1;
+        $SET_EQ = intval($sq) + 1;
+    }
+
+
 }
 
 $TEST = $TESTS[$SET_EQ-1];

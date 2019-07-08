@@ -24,20 +24,18 @@ unset($_SESSION['T_SELECT']);
     <div class="container" style="padding-top: 120px;">
 
         <div align="center">
-            <h2>แบบทดสอบ Barthel ADL</h2>
+            <h2>แบบทดสอบ chula ADL</h2>
             <hr>
         </div>
 
         <div align="center">
-            <p style="font-size: 20px;">แบบประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐาน ที่นิยมใช้ในการประเมินของผู้สูงอายุไทย</p>
-            <p style="font-size: 20px;">บ่งบอกถึงความต้องการด้านการดูแลและการจัดบริการช่วยเหลือดูแล</p>
-            <p style="font-size: 20px;">เป็นตัวชี้วัดสำคัญที่บอกให้ทราบถึงภาวะการณ์พึ่งพิงหรือสุขภาพร่างกาย(Functional health)</p>
+            <p style="font-size: 20px;">เป็นความสามารถในการทำกิจกรรมที่ซับซ่อนขึ้นและเป็นกิจกรรมที่จำเป็น สำหรับการดำเนินชีวิตอย่างเป็นอิสระในชุมชน</p>
 
-            <img class="zoom rounded" src="images/barthel.jpg" height="200px" width="200px">
+            <img class="zoom rounded" src="images/chulaadl.jpg" height="200px" width="200px">
 
             <div class="row">
                 <div class="offset-3 col-md-6">
-                    <form action="barthel-test.php" method="post">
+                    <form action="chula-test.php" method="post">
                         <div class="form-group row">
                             <label for="inputAgeId" class="col-sm-4 col-form-label col-form-label-lg">ช่วงอายุ:</label>
                             <div class="col-sm-8">

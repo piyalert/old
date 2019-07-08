@@ -4,7 +4,7 @@ session_start();
 $SET_EQ = 1;
 $CHOICES = [];
 $TEST = [];
-require_once __DIR__.'/controller/barthelTestController.php';
+require_once __DIR__.'/controller/chulaTestController.php';
 ?>
 
 <!DOCTYPE html>
@@ -109,9 +109,7 @@ require_once __DIR__.'/controller/barthelTestController.php';
     }
 
     function nextChoice(choice,sq) {
-        var this_url = 'barthel-test.php';
         var form = $(document.createElement('form'));
-        $(form).attr("action",this_url);
         $(form).attr("method","POST");
         $(form).attr('hidden',true);
         var input_choice = $('<input>')

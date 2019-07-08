@@ -1,177 +1,141 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>- ภาพกิจกรรม -</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+    <?php require_once __DIR__ . '/_main_header.php'; ?>
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 60%;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: blue;
+            font-size: 20px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: green;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1s;
+            animation-name: fade;
+            animation-duration: 10s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    * {
-        box-sizing: border-box
-    }
-
-    body {
-        font-family: Verdana, sans-serif;
-        margin: 0
-    }
-
-    .mySlides {
-        display: none
-    }
-
-    img {
-        vertical-align: middle;
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 60%;
-        position: relative;
-        margin: auto;
-    }
-
-    /* Next & previous buttons */
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    /* Caption text */
-    .text {
-        color: blue;
-        font-size: 20px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-    }
-
-    /* The dots/bullets/indicators */
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: red;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
-
-    .active, .dot:hover {
-        background-color: green;
-    }
-
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1s;
-        animation-name: fade;
-        animation-duration: 10s;
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-        .prev, .next, .text {
-            font-size: 11px
-        }
-    }
-</style>
 
 <body>
 
 <div class="super_container">
 
     <!-- Header -->
-
-    <header class="header trans_300">
-
-        <!-- Main Navigation -->
-
-        <div class="main_nav_container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-right">
-                        <div class="logo_container">
-                            <a href="prototype.html">การดูแล<span>ผู้สูงอายุ</span></a>
-                        </div>
-                        <nav class="navbar">
-                            <ul class="navbar_menu">
-                                <li><a href="barthelmain.html">Barthel ADL index</a></li>
-                                <li><a href="mainadl.html">Chula ADL Index</a></li>
-                                <li><a href="#">ภาพกิจกรรม</a></li>
-                                <li><a href="takecare.html">การดูแลผู้สูงอายุ</a></li>
-                                <li><a href="contact.html">contact</a></li>
-                            </ul>
-                            <div class="hamburger_container">
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </header>
+    <?php require_once __DIR__.'/_main_menu_top.php';?>
 
     <div class="container" style="padding-top: 120px;">
 
@@ -301,7 +265,6 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         </div>
-        <br>
 
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -326,36 +289,18 @@
             <span class="dot" onclick="currentSlide(20)"></span>
         </div>
 
-
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="mt-5 p-lg-5 bg-secondary">
-            <div class="text-center">
-                @Happy Life Healthy Aging
-            </div>
-        </div>
-    </footer>
+    <?php require_once __DIR__.'/_main_footer.php';?>
 
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
 
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
+<?php require_once __DIR__.'/_main_script.php';?>
 
 <script>
-    function selectChoose(select) {
-        $("#customRadio" + select).click();
-    }
-</script>
 
-<script>
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -386,8 +331,12 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
+
+    function selectChoose(select) {
+        $("#customRadio" + select).click();
+    }
+
 </script>
 
 </body>
-
 </html>

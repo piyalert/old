@@ -13,9 +13,10 @@
                     <nav class="navbar">
                         <ul class="navbar_menu">
                             <li><a href="barthel.php">Barthel ADL index</a></li>
-                            <li><a href="mainadl.html">Chula ADL Index</a></li>
-                            <li><a href="takecare.html">การดูแลผู้สูงอายุ</a></li>
-                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="chula.php">Chula ADL Index</a></li>
+                            <li><a href="activityphoto.php">ภาพกิจกรรม</a></li>
+                            <li><a href="takecare.php">การดูแลผู้สูงอายุ</a></li>
+                            <li><a href="contact.php">contact</a></li>
                         </ul>
                         <div class="hamburger_container">
                             <i class="fa fa-bars" aria-hidden="true"></i>
