@@ -27,7 +27,7 @@
                         <div class="">
                             <img class="w-100 rounded" src="images/main_pic.jpg">
                             <div class="p-2 text-center" style="background-color: #CACFD2;">
-                                <h4>อีกเพียง 4 ปี ประเทศไทยจะเข้าสู่ "สังคมสูงสัยอย่างสมบูรณ์"</h4>
+                                <h4>อีกเพียง 4 ปี ประเทศไทยจะเข้าสู่ "สังคมสูงวัยอย่างสมบูรณ์"</h4>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-4 border">
+                <div class="col-md-4 border" bg-danger>
                     <div class="m-0">
                         <img class="w-100" src="images/data3.jpg" style="height: 350px;">
                     </div>
@@ -59,7 +59,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <a href="#">
-                        <img class="zoom card-img" src="images/1_social.jpg" alt="Card image" style="height: 300px;">
+                        <img class="zoom card-img" src="images/1_social.png" alt="Card image" style="height: 300px;">
                         <div class="card-footer text-center">
                             <h3>กลุ่มติดสังคม</h3>
                         </div>

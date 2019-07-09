@@ -31,7 +31,7 @@ unset($_SESSION['T_SELECT']);
         <div align="center">
             <p style="font-size: 20px;">เป็นความสามารถในการทำกิจกรรมที่ซับซ่อนขึ้นและเป็นกิจกรรมที่จำเป็น สำหรับการดำเนินชีวิตอย่างเป็นอิสระในชุมชน</p>
 
-            <img class="zoom rounded" src="images/chulaadl.jpg" height="200px" width="200px">
+            <img class="zoom rounded" src="images/chulaadl.png" height="200px" width="200px">
 
             <div class="row">
                 <div class="offset-3 col-md-6">
@@ -40,12 +40,10 @@ unset($_SESSION['T_SELECT']);
                             <label for="inputAgeId" class="col-sm-4 col-form-label col-form-label-lg">ช่วงอายุ:</label>
                             <div class="col-sm-8">
                                 <select name="age" class="form-control form-control-lg" id="inputAgeId" required>
-                                    <option value="50">อายุน้อยกว่า 50 ปี</option>
                                     <option value="51-60">อายุ 51-60 ปี</option>
                                     <option value="61-70">อายุ 61-70 ปี</option>
                                     <option value="71-80">อายุ 71-80 ปี</option>
-                                    <option value="81-90">อายุ 81-90 ปี</option>
-                                    <option value="81-90">อายุมากกว่า 91 ปี</option>
+                                    <option value="81-90">อายุมากกว่า 81 ปี</option>
                                 </select>
                             </div>
                         </div>
