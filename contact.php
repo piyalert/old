@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__.'/controller/contactController.php';
 ?>
 
 <!DOCTYPE html>
@@ -7,6 +8,8 @@
 <head>
 
     <?php require_once __DIR__ . '/_main_header.php'; ?>
+
+    <link rel="stylesheet" type="text/css" href="plugins/datatables/dataTables.bootstrap4.css">
 
 </head>
 
@@ -27,6 +30,60 @@
             <p>โรงเรียนสร้างสุขผู้สูงอายุ  คณะพยาบาลศาสตร์ มหาวิทยาลัยอุบลราชธานี</p>
         </div>
 
+        <hr>
+        <h4>แบบทดสอบ Barthel ADL</h4>
+        <div class="table-responsive">
+            <table class="this-table table table-striped table-sm">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>วันที่</th>
+                    <th>ช่วงอายุ</th>
+                    <th>ชื่อ</th>
+                    <th>คะแนน</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($BARTHEL as $key=>$item): ?>
+                <tr>
+                    <td><?php echo ($key+1); ?></td>
+                    <td><?php echo $item['create_at']; ?></td>
+                    <td><?php echo $item['type']; ?></td>
+                    <td><?php echo $item['name']; ?></td>
+                    <td><?php echo $item['score']; ?></td>
+                </tr>
+                <?php endforeach;?>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+        <h4>แบบทดสอบ Chula ADL</h4>
+        <div class="table-responsive">
+            <table class="this-table table table-striped table-sm">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>วันที่</th>
+                    <th>ช่วงอายุ</th>
+                    <th>ชื่อ</th>
+                    <th>คะแนน</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($CHULA as $key=>$item): ?>
+                    <tr>
+                        <td><?php echo ($key+1); ?></td>
+                        <td><?php echo $item['create_at']; ?></td>
+                        <td><?php echo $item['type']; ?></td>
+                        <td><?php echo $item['name']; ?></td>
+                        <td><?php echo $item['score']; ?></td>
+                    </tr>
+                <?php endforeach;?>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 
     <!-- Footer -->
@@ -36,6 +93,18 @@
 
 
 <?php require_once __DIR__ . '/_main_script.php'; ?>
+
+<!-- Javascript Data Tables -->
+<script type="text/javascript" src="plugins/datatables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="plugins/datatables/dataTables.bootstrap4.js"></script>
+
+
+<script>
+    //js data table
+    $(document).ready(function() {
+        $('.this-table').DataTable();
+    } );
+</script>
 
 
 </body>

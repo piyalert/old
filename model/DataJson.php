@@ -4,6 +4,12 @@
 class DataJson
 {
 
+    function readFileChulaADL(){
+        $strDataJson = file_get_contents(__DIR__ . '/chulaADLJson.json');
+        $jsonData = json_decode($strDataJson,true);
+        return $jsonData;
+    }
+
     function readFileBarthelADL(){
         $strDataJson = file_get_contents(__DIR__ . '/barthelADLJson.json');
         $jsonData = json_decode($strDataJson,true);
