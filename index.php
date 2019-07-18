@@ -58,7 +58,7 @@
         <div class="row pt-5">
             <div class="col-md-4">
                 <div class="card">
-                    <a href="#">
+                    <a href="social.php">
                         <img class="zoom card-img" src="images/1_social.png" alt="Card image" style="height: 300px;">
                         <div class="card-footer text-center">
                             <h3>กลุ่มติดสังคม</h3>
@@ -68,7 +68,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href="#">
+                    <a href="home.php">
                         <img class="zoom card-img" src="images/2_home.jpg" alt="Card image" style="height: 300px;">
 
                         <div class="card-footer text-center">
@@ -79,7 +79,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <a href="#">
+                    <a href="bed.php">
                         <img class="zoom card-img" src="images/3_bed.jpg" alt="Card image" style="height: 300px;">
 
                         <div class="card-footer text-center">
