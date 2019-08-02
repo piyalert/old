@@ -23,7 +23,7 @@
         <div class="container">
             <h2>กลุ่มติดเตียง</h2>
             <hr>
-            <img src="./images/bed1.jpg"  width="100%"><br>
+            <img src="./images/bed1.JPG"  width="100%"><br>
         </div>
     </div>
 

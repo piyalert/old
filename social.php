@@ -23,7 +23,7 @@
         <div class="container">
             <h2>กลุ่มติดสังคม</h2>
             <hr>
-            <img src="./images/social.jpg" width="100%"><br>
+            <img src="./images/social.JPG" width="100%"><br>
         </div>
     </div>
 

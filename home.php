@@ -23,7 +23,7 @@
         <div class="container">
             <h2>กลุ่มติดบ้าน</h2>
             <hr>
-            <img src="./images/home1.jpg" width="100%">
+            <img src="./images/home1.JPG" width="100%">
         </div>
     </div>
 
