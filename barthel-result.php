@@ -33,7 +33,7 @@ if($score <= 4){
 <html lang="en">
 <head>
 
-    <?php require_once __DIR__ . '/_main_header.php'; ?>
+    <?php include('_main_header.php');?>
 
 </head>
 
@@ -42,7 +42,7 @@ if($score <= 4){
 <div class="super_container">
 
     <!-- Header -->
-    <?php require_once __DIR__.'/_main_menu_top.php';?>
+    <?php include('_main_menu_top.php');?>
 
     <div class="container" style="padding-top: 120px;">
 
@@ -78,14 +78,14 @@ if($score <= 4){
     </div>
 
     <!-- Footer -->
-    <?php require_once __DIR__.'/_main_footer.php';?>
+    <?php include('_main_footer.php');?>
 
 </div>
 
 
-<?php require_once __DIR__.'/_main_script.php';?>
+<?php include('_main_script.php');?>
 
-<?php require_once __DIR__.'/_modal_message.php';?>
+<?php include('_modal_message.php');?>
 
 <script>
 

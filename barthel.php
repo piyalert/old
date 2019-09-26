@@ -10,7 +10,7 @@ unset($_SESSION['T_SELECT']);
 <html lang="en">
 <head>
 
-    <?php require_once __DIR__ . '/_main_header.php'; ?>
+    <?php include('_main_header.php');?>
 
 </head>
 
@@ -19,7 +19,7 @@ unset($_SESSION['T_SELECT']);
 <div class="super_container">
 
     <!-- Header -->
-    <?php require_once __DIR__.'/_main_menu_top.php';?>
+    <?php include('_main_menu_top.php');?>
 
     <div class="container" style="padding-top: 120px;">
 
@@ -65,12 +65,11 @@ unset($_SESSION['T_SELECT']);
     </div>
 
     <!-- Footer -->
-    <?php require_once __DIR__.'/_main_footer.php';?>
+    <?php include('_main_footer.php');?>
 
 </div>
 
-
-<?php require_once __DIR__.'/_main_script.php';?>
+<?php include('_main_script.php');?>
 
 
 </body>
