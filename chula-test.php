@@ -4,14 +4,14 @@ session_start();
 $SET_EQ = 1;
 $CHOICES = [];
 $TEST = [];
-require_once __DIR__.'/controller/chulaTestController.php';
+include('controller/chulaTestController.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-    <?php require_once __DIR__ . '/_main_header.php'; ?>
+    <?php include('_main_header.php');?>
 
 </head>
 
@@ -20,7 +20,7 @@ require_once __DIR__.'/controller/chulaTestController.php';
 <div class="super_container">
 
     <!-- Header -->
-    <?php require_once __DIR__.'/_main_menu_top.php';?>
+    <?php include('_main_menu_top.php');?>
 
     <div class="container" style="padding-top: 120px;">
 
@@ -75,14 +75,13 @@ require_once __DIR__.'/controller/chulaTestController.php';
     </div>
 
     <!-- Footer -->
-    <?php require_once __DIR__.'/_main_footer.php';?>
+    <?php include('_main_footer.php');?>
 
 </div>
 
 
-<?php require_once __DIR__.'/_main_script.php';?>
-
-<?php require_once __DIR__.'/_modal_message.php';?>
+<?php include('_main_script.php');?>
+<?php include('_modal_message.php');?>
 
 <script>
     function selectChoose(select) {

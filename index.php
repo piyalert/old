@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 
-    <?php require_once __DIR__ . '/_main_header.php'; ?>
+    <?php include('_main_header.php');?>
 
 
 </head>
@@ -15,7 +15,7 @@
 <div class="super_container">
 
     <!-- Header -->
-    <?php require_once __DIR__.'/_main_menu_top.php';?>
+    <?php include('_main_menu_top.php');?>
 
     <div class="row" style="padding-top: 120px;">
         <div class="container">
@@ -91,12 +91,12 @@
 
 
     <!-- Footer -->
-    <?php require_once __DIR__.'/_main_footer.php';?>
+    <?php include('_main_footer.php');?>
 
 </div>
 
 
-<?php require_once __DIR__.'/_main_script.php';?>
+<?php include('_main_script.php');?>
 
 
 </body>
