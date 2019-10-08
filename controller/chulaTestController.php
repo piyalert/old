@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__.'/../model/DataJson.php';
+include ('../model/DataJson.php');
 $FileJson = new DataJson();
 
 $input_name = isset($_REQUEST['name'])?$_REQUEST['name']:'';
