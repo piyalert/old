@@ -1,6 +1,5 @@
 <?php
 include('../model/DataJson.php');
-
 $FileJson = new DataJson();
 $BARTHEL = [];
 $CHULA = [];
