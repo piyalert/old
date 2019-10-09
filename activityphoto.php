@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
 
-    <?php include('_main_header.php');?>
+    <?php include('_main_header.php'); ?>
 
     <style>
         * {

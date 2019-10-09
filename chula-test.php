@@ -4,7 +4,8 @@ session_start();
 $SET_EQ = 1;
 $CHOICES = [];
 $TEST = [];
-include('controller/chulaTestController.php');
+//include('controller/chulaTestController.php');
+include __DIR__.'/controller/chulaTestController.php';
 ?>
 
 <!DOCTYPE html>
