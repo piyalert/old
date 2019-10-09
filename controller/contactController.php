@@ -1,5 +1,7 @@
 <?php
-include('./model/DataJson.php');
+//include('./model/DataJson.php');
+include __DIR__.'/../model/DataJson.php';
+
 $FileJson = new DataJson();
 $BARTHEL = [];
 $CHULA = [];

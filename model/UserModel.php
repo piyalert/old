@@ -1,5 +1,5 @@
 <?php
-require ('_DBPDO.php');
+require (__DIR__.'_DBPDO.php');
 
 class UserModel  extends _DBPDO
 {

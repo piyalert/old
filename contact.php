@@ -1,6 +1,7 @@
 <?php
 
-include('controller/contactController.php');
+//include('controller/contactController.php');
+include __DIR__.'/controller/contactController.php';
 ?>
 
 <!DOCTYPE html>
