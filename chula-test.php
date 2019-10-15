@@ -3,7 +3,8 @@ session_start();
 
 $SET_EQ = 1;
 $CHOICES = [];
-$TEST = [];
+$TESTS = [];
+$TEST = ['test_top'=>'','test_title'=>''];
 //include('controller/chulaTestController.php');
 include __DIR__.'/controller/chulaTestController.php';
 ?>
