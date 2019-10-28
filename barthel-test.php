@@ -2,11 +2,11 @@
 session_start();
 
 $SET_EQ = 1;
-$CHOICES = [];
-$TESTS = [];
-$TEST = ['test_top'=>'','test_title'=>''];
+$CHOICES = array();
+$TESTS = array();
+$TEST = array('test_top'=>'','test_title'=>'');
 //include('controller/barthelTestController.php');
-include __DIR__.'/controller/barthelTestController.php';
+include dirname(__file__).'/controller/barthelTestController.php';
 ?>
 
 <!DOCTYPE html>
