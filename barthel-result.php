@@ -68,7 +68,7 @@ if($score <= 4){
 
         <div class="row pt-5">
             <div class="offset-3 col-md-6">
-                <a class="btn btn-success btn-lg btn-block" href="/old/barthel.php">
+                <a class="btn btn-success btn-lg btn-block" href="/oldperson/barthel.php">
                     <h3 class="font-weight-bold text-white">กลับไปยังหน้าหลัก</h3>
                 </a>
             </div>
