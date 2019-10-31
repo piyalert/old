@@ -3,8 +3,8 @@
 include __DIR__.'/../model/DataJson.php';
 
 $FileJson = new DataJson();
-$BARTHEL = [];
-$CHULA = [];
+$BARTHEL = array();
+$CHULA = array();
 
 $result = $FileJson->readFileBarthelADL();
 if(count($result)>0){
