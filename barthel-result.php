@@ -9,19 +9,19 @@ $str_score = '';
 $str_th = '';
 $str_en = '';
 if($score <= 4){
-    $str_score = '0 - 4 คะแนน';
+    $str_score = $score;
     $str_th = 'ภาวะพี่งพาโดยสมบูรณ์';
     $str_en = '( very low initial score, total dependence )';
 }elseif ($score <= 8){
-    $str_score = '5 - 8 คะแนน';
+    $str_score = $score;
     $str_th = 'ภาวะพึ่งพารุนแรง';
     $str_en = '( low initial score, severe dependence )';
 }elseif ($score <= 11){
-    $str_score = '9 - 11 คะแนน';
+    $str_score = $score;
     $str_th = 'ภาวะพึ่งปานกลาง';
     $str_en = '( intermediate initial score, moderately severs dependence )';
 }else{
-    $str_score = '12 - 20 คะแนน';
+    $str_score = $score;
     $str_th = 'ไม่เป็นการพึ่งพา';
     $str_en = '( intermediate high, mildly moderately severs dependence , consideration of discharging home )';
 }

@@ -24,16 +24,19 @@ unset($_SESSION['T_SELECT']);
     <div class="container" style="padding-top: 120px;">
 
         <div align="center">
-            <h2>แบบทดสอบ Barthel ADL</h2>
+            <h1>แบบทดสอบ Barthel ADL</h1>
             <hr>
         </div>
 
         <div align="center">
-            <p style="font-size: 20px;">แบบประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐาน ที่นิยมใช้ในการประเมินของผู้สูงอายุไทย</p>
-            <p style="font-size: 20px;">บ่งบอกถึงความต้องการด้านการดูแลและการจัดบริการช่วยเหลือดูแล</p>
-            <p style="font-size: 20px;">เป็นตัวชี้วัดสำคัญที่บอกให้ทราบถึงภาวะการณ์พึ่งพิงหรือสุขภาพร่างกาย(Functional health)</p>
+            <p style="font-size: 32px; color: orange">การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐานของผู้สูงอายุ</p>
+            <p style="font-size: 22px; color: orange">   แบบประเมินที่ใช้ในการประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐานของ</p>
+            <p style="font-size: 22px; color: orange">ผู้สูงอายุ ที่นิยมใช้ในการประเมินของผู้สูงอายุไทย  คือ ดัชนีบาร์ เทล เอดีแอล (Barthel ADL index)</p>
+            <p style="font-size: 22px; color: orange">โดยประเมินว่าทำกิจกรรมเหล่านี้ได้ด้วยตนเองทั้งหมด หรือทำได้โดยมีผู้ช่วย หรือทำไม่ได้เลย </p>
+            <p style="font-size: 22px; color: orange">ซึ่งการต้องการผู้ช่วยและการทำไม่ได้จะสะท้อนภาวะพึ่งพาของผู้สูงอายุ  บ่งบอกถึงความต้องการด้านการดูแล</p>
+            <p style="font-size: 22px; color: orange">และการจัดบริการช่วยเหลือดูแล เป็นตัวชี้วัดสำคัญที่บอกให้ทราบถึงภาวการณ์พึ่งพิงหรือสุขภาพร่างกายของผู้สูงอายุ</p>
 
-            <img class="zoom rounded" src="images/barthel.png" height="200px" width="200px">
+            <img class="zoom rounded" src="images/barthel.png" height="350px" width="350px">
 
             <div class="row">
                 <div class="offset-3 col-md-6">
@@ -42,10 +45,14 @@ unset($_SESSION['T_SELECT']);
                             <label for="inputAgeId" class="col-sm-4 col-form-label col-form-label-lg">ช่วงอายุ:</label>
                             <div class="col-sm-8">
                                 <select name="age" class="form-control form-control-lg" id="inputAgeId" required>
-                                    <option value="51-60">อายุ 51-60 ปี</option>
-                                    <option value="61-70">อายุ 61-70 ปี</option>
-                                    <option value="71-80">อายุ 71-80 ปี</option>
-                                    <option value="81-90">อายุมากกว่า 81 ปี</option>
+                                    <option value="60-69">60-69 ปี (ผู้สูงอายุตอนต้น)</option>
+                                    <option value="70-79">อายุ 70-79 ปี (ผู้สูงอายุตอนปลาย)</option>
+                                    <option value="80">อายุ 80 ปีขึ้นไป (ผู้สูงอายุตอนปลาย)</option>
+                                </select>
+
+                                <select name="sex" class="form-control form-control-lg" id="inputASexId" required>
+                                    <option value="m">ชาย</option>
+                                    <option value="f">หญิง</option>
                                 </select>
                             </div>
                         </div>

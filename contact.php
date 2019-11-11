@@ -23,7 +23,7 @@ include dirname(__file__).'/controller/contactController.php';
 
     <div class="container" style="padding-top: 120px;">
         <div align="center">
-            <h2>ผู้จัดทำ</h2>
+            <h2>พัฒนาโดย</h2>
             <hr>
             <img src="images/contact.jpg" height="200px" width="200px"><br><br>
             <p>ผู้ช่วยศาสตราจารย์  สาวิตรี  สิงหาด</p>
@@ -32,59 +32,6 @@ include dirname(__file__).'/controller/contactController.php';
         </div>
 
         <hr>
-        <h4>แบบทดสอบ Barthel ADL</h4>
-        <div class="table-responsive">
-            <table class="this-table table table-striped table-sm">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>วันที่</th>
-                    <th>ช่วงอายุ</th>
-                    <th>ชื่อ</th>
-                    <th>คะแนน</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($BARTHEL as $key=>$item): ?>
-                <tr>
-                    <td><?php echo ($key+1); ?></td>
-                    <td><?php echo $item['create_at']; ?></td>
-                    <td><?php echo $item['type']; ?></td>
-                    <td><?php echo $item['name']; ?></td>
-                    <td><?php echo $item['score']; ?></td>
-                </tr>
-                <?php endforeach;?>
-                </tbody>
-            </table>
-        </div>
-
-        <hr>
-        <h4>แบบทดสอบ Chula ADL</h4>
-        <div class="table-responsive">
-            <table class="this-table table table-striped table-sm">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>วันที่</th>
-                    <th>ช่วงอายุ</th>
-                    <th>ชื่อ</th>
-                    <th>คะแนน</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($CHULA as $key=>$item): ?>
-                    <tr>
-                        <td><?php echo ($key+1); ?></td>
-                        <td><?php echo $item['create_at']; ?></td>
-                        <td><?php echo $item['type']; ?></td>
-                        <td><?php echo $item['name']; ?></td>
-                        <td><?php echo $item['score']; ?></td>
-                    </tr>
-                <?php endforeach;?>
-                </tbody>
-            </table>
-        </div>
-
     </div>
 
     <!-- Footer -->

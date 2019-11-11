@@ -24,14 +24,19 @@ unset($_SESSION['T_SELECT']);
     <div class="container" style="padding-top: 120px;">
 
         <div align="center">
-            <h2>แบบทดสอบ chula ADL</h2>
+            <h1>แบบทดสอบ chula ADL</h1>
             <hr>
         </div>
 
         <div align="center">
-            <p style="font-size: 20px;">เป็นความสามารถในการทำกิจกรรมที่ซับซ่อนขึ้นและเป็นกิจกรรมที่จำเป็น สำหรับการดำเนินชีวิตอย่างเป็นอิสระในชุมชน</p>
+            <p style="font-size: 32px; color: orange">การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันต่อเนื่อง</p>
+            <p style="font-size: 22px; color: orange">แบบประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันต่อเนื่องที่นิยมใช้ในการประเมินของผู้สูงอายุไทย</p>
+            <p style="font-size: 22px; color: orange">คือ  การประเมินความสามารถเชิงปฏิบัติ ดัชนีจุฬาเอดีแอล (Chula ADL Index)  </p>
+            <p style="font-size: 22px; color: orange">เป็นความสามารถในการทำกิจกรรมที่ซับซ่อนขึ้นและเป็นกิจกรรมที่จำเป็น สำหรับการดำเนินชีวิตอย่างเป็นอิสระในชุมชน</p>
+            <p style="font-size: 22px; color: orange">และการทำไม่ได้จะสะท้อนภาวะพึ่งพาของผู้สูงอายุ  บ่งบอกถึงความต้องการด้านการดูแล</p>
+            <p style="font-size: 22px; color: orange">และการจัดบริการช่วยเหลือดูแล เป็นตัวชี้วัดสำคัญที่บอกให้ทราบถึงภาวการณ์พึ่งพิงหรือสุขภาพร่างกายของผู้สูงอายุ</p>
 
-            <img class="zoom rounded" src="images/chulaadl.png" height="200px" width="200px">
+            <img class="zoom rounded" src="images/chulaadl.png" height="350px" width="350px">
 
             <div class="row">
                 <div class="offset-3 col-md-6">
@@ -39,11 +44,15 @@ unset($_SESSION['T_SELECT']);
                         <div class="form-group row">
                             <label for="inputAgeId" class="col-sm-4 col-form-label col-form-label-lg">ช่วงอายุ:</label>
                             <div class="col-sm-8">
-                                <select name="age" class="form-control form-control-lg" id="inputAgeId" required>
-                                    <option value="51-60">อายุ 51-60 ปี</option>
-                                    <option value="61-70">อายุ 61-70 ปี</option>
-                                    <option value="71-80">อายุ 71-80 ปี</option>
-                                    <option value="81-90">อายุมากกว่า 81 ปี</option>
+                            <select name="age" class="form-control form-control-lg" id="inputAgeId" required>
+                                    <option value="60-69">60-69 ปี (ผู้สูงอายุตอนต้น)</option>
+                                    <option value="70-79">อายุ 70-79 ปี (ผู้สูงอายุตอนปลาย)</option>
+                                    <option value="80">อายุ 80 ปีขึ้นไป (ผู้สูงอายุตอนปลาย)</option>
+                                </select>
+
+                                <select name="sex" class="form-control form-control-lg" id="inputASexId" required>
+                                    <option value="m">ชาย</option>
+                                    <option value="f">หญิง</option>
                                 </select>
                             </div>
                         </div>
