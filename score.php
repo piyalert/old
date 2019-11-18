@@ -21,16 +21,6 @@ include dirname(__file__).'/controller/contactController.php';
     <!-- Header -->
     <?php include('_main_menu_top.php');?>
 
-    <div class="container" style="padding-top: 120px;">
-        <div align="center">
-            <h2>พัฒนาโดย</h2>
-            <hr>
-            <img src="images/contact.jpg" height="200px" width="200px"><br><br>
-            <p>ผู้ช่วยศาสตราจารย์  สาวิตรี  สิงหาด</p>
-            <p>คณะพยาบาลศาสตร์ มหาวิทยาลัยอุบลราชธานี</p>
-            <p>โรงเรียนสร้างสุขผู้สูงอายุ  คณะพยาบาลศาสตร์ มหาวิทยาลัยอุบลราชธานี</p>
-        </div>
-
         <hr>
         <h4>แบบทดสอบ Barthel ADL</h4>
         <div class="table-responsive">
@@ -41,7 +31,7 @@ include dirname(__file__).'/controller/contactController.php';
                     <th>วันที่</th>
                     <th>ช่วงอายุ</th>
                     <th>ชื่อ</th>
-                    <th>คะแนน</th>
+                    <th>เพศ</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -51,7 +41,7 @@ include dirname(__file__).'/controller/contactController.php';
                     <td><?php echo $item['create_at']; ?></td>
                     <td><?php echo $item['type']; ?></td>
                     <td><?php echo $item['name']; ?></td>
-                    <td><?php echo $item['score']; ?></td>
+                    <td><?php echo $item['sex']; ?></td>
                 </tr>
                 <?php endforeach;?>
                 </tbody>
@@ -68,7 +58,7 @@ include dirname(__file__).'/controller/contactController.php';
                     <th>วันที่</th>
                     <th>ช่วงอายุ</th>
                     <th>ชื่อ</th>
-                    <th>คะแนน</th>
+                    <th>เพศ</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -78,7 +68,7 @@ include dirname(__file__).'/controller/contactController.php';
                         <td><?php echo $item['create_at']; ?></td>
                         <td><?php echo $item['type']; ?></td>
                         <td><?php echo $item['name']; ?></td>
-                        <td><?php echo $item['score']; ?></td>
+                        <td><?php echo $item['sex']; ?></td>
                     </tr>
                 <?php endforeach;?>
                 </tbody>
