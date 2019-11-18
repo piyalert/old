@@ -556,10 +556,10 @@ section
 {
 	display: block;
 	color: #1e1e27;
-	font-size: 13px;
+	font-size: 18px;
 	font-weight: 500;
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 10px;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-ms-transition: color 0.3s ease;

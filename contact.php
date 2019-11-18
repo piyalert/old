@@ -32,37 +32,38 @@ include dirname(__file__).'/controller/contactController.php';
         </div>
 
         <hr>
-        <h4>แบบทดสอบ Barthel ADL</h4>
-        <div class="table-responsive">
-            <table class="this-table table table-striped table-sm">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>วันที่</th>
-                    <th>ช่วงอายุ</th>
-                    <th>เพศ</th>
-                    <th>ชื่อ</th>
-                    <th>คะแนน</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($BARTHEL as $key=>$item): ?>
-                <tr>
-                    <td><?php echo ($key+1); ?></td>
-                    <td><?php echo $item['create_at']; ?></td>
-                    <td><?php echo $item['type']; ?></td>
-                    <td><?php echo $item['gender']=='male'?'ชาย':'หญิง'; ?></td>
-                    <td><?php echo $item['name']; ?></td>
-                    <td><?php echo $item['score']; ?></td>
-                </tr>
-                <?php endforeach;?>
-                </tbody>
-            </table>
-        </div>
+        <div style="display: none">
+            <h4>แบบทดสอบ Barthel ADL</h4>
+            <div class="table-responsive">
+                <table class="this-table table table-striped table-sm">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>วันที่</th>
+                        <th>ช่วงอายุ</th>
+                        <th>เพศ</th>
+                        <th>ชื่อ</th>
+                        <th>คะแนน</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($BARTHEL as $key=>$item): ?>
+                    <tr>
+                        <td><?php echo ($key+1); ?></td>
+                        <td><?php echo $item['create_at']; ?></td>
+                        <td><?php echo $item['type']; ?></td>
+                        <td><?php echo $item['gender']=='male'?'ชาย':'หญิง';?></td>
+                        <td><?php echo $item['name']; ?></td>
+                        <td><?php echo $item['score']; ?></td>
+                    </tr>
+                    <?php endforeach;?>
+                    </tbody>
+                </table>
+            </div>
 
-        <hr>
-        <h4>แบบทดสอบ Chula ADL</h4>
-        <div class="table-responsive">
+            <hr>
+            <h4>แบบทดสอบ Chula ADL</h4>
+            <div class="table-responsive">
             <table class="this-table table table-striped table-sm">
                 <thead>
                 <tr>
@@ -88,7 +89,7 @@ include dirname(__file__).'/controller/contactController.php';
                 </tbody>
             </table>
         </div>
-
+        </div>
     </div>
 
     <!-- Footer -->

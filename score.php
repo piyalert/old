@@ -20,7 +20,7 @@ include dirname(__file__).'/controller/contactController.php';
 
     <!-- Header -->
     <?php include('_main_menu_top.php');?>
-
+    <div class="container" style="padding-top: 120px;">
         <hr>
         <h4>แบบทดสอบ Barthel ADL</h4>
         <div class="table-responsive">
@@ -41,7 +41,7 @@ include dirname(__file__).'/controller/contactController.php';
                     <td><?php echo $item['create_at']; ?></td>
                     <td><?php echo $item['type']; ?></td>
                     <td><?php echo $item['name']; ?></td>
-                    <td><?php echo $item['sex']; ?></td>
+                    <td><?php echo $item['gender']=='male'?'ชาย':'หญิง';?></td>
                 </tr>
                 <?php endforeach;?>
                 </tbody>
@@ -68,7 +68,7 @@ include dirname(__file__).'/controller/contactController.php';
                         <td><?php echo $item['create_at']; ?></td>
                         <td><?php echo $item['type']; ?></td>
                         <td><?php echo $item['name']; ?></td>
-                        <td><?php echo $item['sex']; ?></td>
+                        <td><?php echo $item['gender']=='male'?'ชาย':'หญิง';?></td>
                     </tr>
                 <?php endforeach;?>
                 </tbody>

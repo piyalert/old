@@ -50,11 +50,6 @@ unset($_SESSION['T_SELECT']);
                                     <option value="70-79">อายุ 70-79 ปี (ผู้สูงอายุตอนปลาย)</option>
                                     <option value="80">อายุ 80 ปีขึ้นไป (ผู้สูงอายุตอนปลาย)</option>
                                 </select>
-
-                                <select name="sex" class="form-control form-control-lg" id="inputASexId" required>
-                                    <option value="m">ชาย</option>
-                                    <option value="f">หญิง</option>
-                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
