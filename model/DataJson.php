@@ -5,18 +5,18 @@ class DataJson
 {
 
     function readFileChulaADL(){
-        $strDataJson = file_get_contents( 'http://www.nurse.ubu.ac.th/oldperson/model/chulaADLJson.json');
+        $strDataJson = file_get_contents( dirname(__file__).'/chulaADLJson.json');
         $jsonData = json_decode($strDataJson,true);
         return $jsonData;
     }
 
     function readFileBarthelADL(){
-        $strDataJson = file_get_contents( 'http://www.nurse.ubu.ac.th/oldperson/model/barthelADLJson.json');
+        $strDataJson = file_get_contents( dirname(__file__).'/barthelADLJson.json');
         $jsonData = json_decode($strDataJson,true);
         return $jsonData;
     }
     //name, type, score ,  create_at
-    function writeFileBarthelADL($name , $type , $score){
+    function writeFileBarthelADL($name ,$gender, $type , $score){
         $strDataJson = file_get_contents( dirname(__file__).'/barthelADLJson.json');
         $jsonData = json_decode($strDataJson,true);
         $write = array();
@@ -25,6 +25,7 @@ class DataJson
         }
         $write[] = array(
             'name'=>$name,
+            'gender'=>$gender,
             'type'=>$type,
             'score'=>$score,
             'create_at'=>date('Y-m-d')
@@ -36,7 +37,7 @@ class DataJson
 
     }
 
-    function writeFileChulaADL($name , $type , $score){
+    function writeFileChulaADL($name ,$gender, $type , $score){
         $strDataJson = file_get_contents( dirname(__file__).'/chulaADLJson.json');
         $jsonData = json_decode($strDataJson,true);
         $write = array();
@@ -45,6 +46,7 @@ class DataJson
         }
         $write[] = array(
             'name'=>$name,
+            'gender'=>$gender,
             'type'=>$type,
             'score'=>$score,
             'create_at'=>date('Y-m-d')

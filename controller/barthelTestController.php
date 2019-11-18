@@ -6,8 +6,10 @@ $FileJson = new DataJson();
 $input_name = isset($_REQUEST['name'])?$_REQUEST['name']:'';
 if($input_name!==''){
     $input_age = isset($_REQUEST['age'])?$_REQUEST['age']:'50';
+    $input_gender = isset($_REQUEST['gender'])?$_REQUEST['gender']:'female';
     $_SESSION['U_NAME'] = $input_name;
     $_SESSION['U_AGE']= $input_age;
+    $_SESSION['U_GENDER'] = $input_gender;
     $_SESSION['T_EQ'] = 1;
     $_SESSION['T_SELECT'] = array();
 }
@@ -101,7 +103,7 @@ $TESTS[]=array(
         array( 'score'=>0,'src'=>'images/bar8-2.jpg','text'=>'อาบน้ำเองได้')
     )
 );
-$TEST[]=array(
+$TESTS[]=array(
     'eq'=>'9',
     'test_top'=>'ข้อที่ 9 การกลั้นการถ่ายอุจจาระ (Bowels)',
     'test_title'=>'ในระยะ 1 สัปดาห์ที่ผ่านมา',
@@ -111,7 +113,7 @@ $TEST[]=array(
         array( 'score'=>2,'src'=>'images/bar9-3.jpg','text'=>'กลั้นได้เป็นปกติ')
     )
 );
-$TEST[]=array(
+$TESTS[]=array(
     'eq'=>'10',
     'test_top'=>'ข้อที่ 10 การกลั้นปัสสาวะ (Bladder)',
     'test_title'=>'ในระยะ 1 สัปดาห์ที่ผ่านมา',
@@ -142,7 +144,8 @@ if($sq!='-' && $select!='-'){
 
         $name  =  $_SESSION['U_NAME'];
         $type = $_SESSION['U_AGE'];
-        $FileJson->writeFileBarthelADL($name,$type,$score);
+        $gender = $_SESSION['U_GENDER'];
+        $FileJson->writeFileBarthelADL($name,$gender,$type,$score);
         header( "location: /oldperson/barthel-result.php" );
         exit(0);
     }else{

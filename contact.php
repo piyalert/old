@@ -39,8 +39,9 @@ include dirname(__file__).'/controller/contactController.php';
                 <tr>
                     <th>#</th>
                     <th>วันที่</th>
-                    <th>ช่วงอายุ</th>
                     <th>ชื่อ</th>
+                    <th>เพศ</th>
+                    <th>ช่วงอายุ</th>
                     <th>คะแนน</th>
                 </tr>
                 </thead>
@@ -49,8 +50,9 @@ include dirname(__file__).'/controller/contactController.php';
                 <tr>
                     <td><?php echo ($key+1); ?></td>
                     <td><?php echo $item['create_at']; ?></td>
-                    <td><?php echo $item['type']; ?></td>
                     <td><?php echo $item['name']; ?></td>
+                    <td><?php echo $item['gender']=='male'?'ชาย':'หญิง'; ?></td>
+                    <td><?php echo $item['type']; ?></td>
                     <td><?php echo $item['score']; ?></td>
                 </tr>
                 <?php endforeach;?>
@@ -66,8 +68,9 @@ include dirname(__file__).'/controller/contactController.php';
                 <tr>
                     <th>#</th>
                     <th>วันที่</th>
-                    <th>ช่วงอายุ</th>
                     <th>ชื่อ</th>
+                    <th>เพศ</th>
+                    <th>ช่วงอายุ</th>
                     <th>คะแนน</th>
                 </tr>
                 </thead>
@@ -76,8 +79,9 @@ include dirname(__file__).'/controller/contactController.php';
                     <tr>
                         <td><?php echo ($key+1); ?></td>
                         <td><?php echo $item['create_at']; ?></td>
-                        <td><?php echo $item['type']; ?></td>
                         <td><?php echo $item['name']; ?></td>
+                        <td><?php echo $item['gender']=='male'?'ชาย':'หญิง'; ?></td>
+                        <td><?php echo $item['type']; ?></td>
                         <td><?php echo $item['score']; ?></td>
                     </tr>
                 <?php endforeach;?>

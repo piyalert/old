@@ -6,8 +6,10 @@ $FileJson = new DataJson();
 $input_name = isset($_REQUEST['name'])?$_REQUEST['name']:'';
 if($input_name!==''){
     $input_age = isset($_REQUEST['age'])?$_REQUEST['age']:'50';
+    $input_gender = isset($_REQUEST['gender'])?$_REQUEST['gender']:'female';
     $_SESSION['U_NAME'] = $input_name;
     $_SESSION['U_AGE']= $input_age;
+    $_SESSION['U_GENDER'] = $input_gender;
     $_SESSION['T_EQ'] = 1;
     $_SESSION['T_SELECT'] = array();
 }
@@ -90,7 +92,8 @@ if($sq!='-' && $select!='-'){
 
         $name  =  $_SESSION['U_NAME'];
         $type = $_SESSION['U_AGE'];
-        $FileJson->writeFileChulaADL($name,$type,$score);
+        $gender = $_SESSION['U_GENDER'];
+        $FileJson->writeFileChulaADL($name,$gender,$type,$score);
         header( "location: /oldperson/chula-result.php" );
         exit(0);
     }else{

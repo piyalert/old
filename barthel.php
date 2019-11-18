@@ -2,6 +2,7 @@
 session_start();
 unset($_SESSION['U_NAME']);
 unset($_SESSION['U_AGE']);
+unset($_SESSION['U_GENDER']);
 unset($_SESSION['T_EQ']);
 unset($_SESSION['T_SELECT']);
 ?>
@@ -46,6 +47,15 @@ unset($_SESSION['T_SELECT']);
                                     <option value="61-70">อายุ 61-70 ปี</option>
                                     <option value="71-80">อายุ 71-80 ปี</option>
                                     <option value="81-90">อายุมากกว่า 81 ปี</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputGenderId" class="col-sm-4 col-form-label col-form-label-lg">เพศ:</label>
+                            <div class="col-sm-8">
+                                <select name="gender" class="form-control form-control-lg" id="inputGenderId" required>
+                                    <option value="female">หญิง</option>
+                                    <option value="male">ชาย</option>
                                 </select>
                             </div>
                         </div>

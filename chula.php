@@ -2,6 +2,7 @@
 session_start();
 unset($_SESSION['U_NAME']);
 unset($_SESSION['U_AGE']);
+unset($_SESSION['U_GENDER']);
 unset($_SESSION['T_EQ']);
 unset($_SESSION['T_SELECT']);
 ?>
@@ -33,7 +34,7 @@ unset($_SESSION['T_SELECT']);
 
             <img class="zoom rounded" src="images/chulaadl.png" height="200px" width="200px">
 
-            <div class="row">
+            <div class="row mt-4">
                 <div class="offset-3 col-md-6">
                     <form action="chula-test.php" method="post">
                         <div class="form-group row">
@@ -48,6 +49,16 @@ unset($_SESSION['T_SELECT']);
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label for="inputGenderId" class="col-sm-4 col-form-label col-form-label-lg">เพศ:</label>
+                            <div class="col-sm-8">
+                                <select name="gender" class="form-control form-control-lg" id="inputGenderId" required>
+                                    <option value="female">หญิง</option>
+                                    <option value="male">ชาย</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="inputNameId" class="col-sm-4 col-form-label col-form-label-lg">กรุณาระบุชื่อ:</label>
                             <div class="col-sm-8">
                                 <input name="name" type="text" class="form-control form-control-lg" id="inputNameId" placeholder="ชื่อ" required>
@@ -55,6 +66,8 @@ unset($_SESSION['T_SELECT']);
                         </div>
                         <button class="btn btn-primary" type="submit">เริ่มทำแบบทดสอบ</button>
                     </form>
+
+
                 </div>
             </div>
 
