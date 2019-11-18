@@ -40,6 +40,7 @@ include dirname(__file__).'/controller/contactController.php';
                     <th>#</th>
                     <th>วันที่</th>
                     <th>ช่วงอายุ</th>
+                    <th>เพศ</th>
                     <th>ชื่อ</th>
                     <th>คะแนน</th>
                 </tr>
@@ -50,6 +51,7 @@ include dirname(__file__).'/controller/contactController.php';
                     <td><?php echo ($key+1); ?></td>
                     <td><?php echo $item['create_at']; ?></td>
                     <td><?php echo $item['type']; ?></td>
+                    <td><?php echo $item['gender']=='male'?'ชาย':'หญิง'; ?></td>
                     <td><?php echo $item['name']; ?></td>
                     <td><?php echo $item['score']; ?></td>
                 </tr>
@@ -67,6 +69,7 @@ include dirname(__file__).'/controller/contactController.php';
                     <th>#</th>
                     <th>วันที่</th>
                     <th>ช่วงอายุ</th>
+                    <th>เพศ</th>
                     <th>ชื่อ</th>
                     <th>คะแนน</th>
                 </tr>
@@ -77,6 +80,7 @@ include dirname(__file__).'/controller/contactController.php';
                         <td><?php echo ($key+1); ?></td>
                         <td><?php echo $item['create_at']; ?></td>
                         <td><?php echo $item['type']; ?></td>
+                        <td><?php echo $item['gender']=='male'?'ชาย':'หญิง'; ?></td>
                         <td><?php echo $item['name']; ?></td>
                         <td><?php echo $item['score']; ?></td>
                     </tr>
