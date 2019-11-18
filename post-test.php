@@ -18,15 +18,17 @@
 
     <div class="container" style="padding-top: 120px;">
 
-        <div align="center">
-            <h1>แบบทดสอบ chula ADL</h1>
-            <hr>
-        </div>
 
-        <div align="center" style="padding-top: 20px; padding-bottom: 20px;">
-            <h3><a href="barthel.php">การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐานของผู้สูงอายุ <br> (basic activities of daily living: ADL)</a> </h3>
-            <hr>
-            <h3><a href="chula.php">การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันต่อเนื่องของผู้สูงอายุ <br> (instrumental activities of daily living: IADL)</a></h3>
+        <div align="center" style="padding-top: 50px; padding-bottom: 50px; margin-bottom: 100px;">
+            <div style="margin-top: 50px;">
+                <h3><a href="barthel.php">การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐานของผู้สูงอายุ <br> (basic activities of daily living: ADL)</a> </h3>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3><a href="chula.php">การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันต่อเนื่องของผู้สูงอายุ <br> (instrumental activities of daily living: IADL)</a></h3>
+            </div>
+
+
         </div>
 
     </div>
