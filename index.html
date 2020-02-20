@@ -1,153 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>ผู้สูงอายุ</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Cherry, and Bootstrap contributors">
+    <title>Title</title>
+
+    <!-- Bootstrap css -->
+    <link href="./bootstrap-4.2.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./bootstrap-4.2.1/css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Font awesome -->
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="./css/custom.css" rel="stylesheet" type="text/css">
+
 </head>
+<body class="container">
 
-<body>
+<div class="page-body">
+    <!-- image header -->
+    <div>
+        <img src="./img/header.jpg" class="img-fluid w-100">
+    </div>
+    <!-- menu -->
+    <nav class="navbar navbar-expand-sm navbar-top">
+        <a class="navbar-brand text-white" href="#"> &nbsp; </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="text-white"><i class="fa fa-list"></i></span>
+        </button>
 
-<div class="super_container">
+        <div class="navbar-collapse collapse" id="navbarsExample03" style="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html"> หน้าหลัก <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html"> การประเมินความสามารถ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html"> ภาพถ่ายกิจกรรม </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index4.html"> การแปรผลคะแนน </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index5.html"> ผู้พัฒนา </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-	<!-- Header -->
+    <!-- detail body -->
+    <div style="min-height: 350px;">
 
-	<header class="header trans_300">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <img class="img-fluid img-thumbnail mx-auto d-block rounded" src="./img/pic1.jpg" alt="image" style="max-height: 600px;">
+            </div>
+            <div class="col-12 col-md-6 mt-1">
+                <img class="img-fluid img-thumbnail mx-auto d-block rounded" src="./img/pic2.jpg" alt="image" style="max-height: 320px;">
+            </div>
+            <div class="col-12 col-md-6 mt-1">
+                <img class="img-fluid img-thumbnail mx-auto d-block rounded" src="./img/pic3.jpg" alt="image" style="max-height: 320px;">
+            </div>
+            <div class="col-12 col-md-6 mt-1">
+                <img class="img-fluid img-thumbnail mx-auto d-block rounded" src="./img/pic4.jpg" alt="image" style="max-height: 320px;">
+            </div>
+            <div class="col-12 col-md-6 mt-1">
+                <img class="img-fluid img-thumbnail mx-auto d-block rounded" src="./img/pic5.jpg" alt="image" style="max-height: 320px;">
+            </div>
+            <div class="col-12 col-md-4 mt-1">
+                <img class="img-fluid img-thumbnail mx-auto d-block rounded" src="./img/pic6.jpg" alt="image" style="max-height: 300px;">
+            </div>
+            <div class="col-12 col-md-4 mt-1">
+                <img class="img-fluid img-thumbnail mx-auto d-block rounded" src="./img/pic7.jpg" alt="image" style="max-height: 300px;">
+            </div>
+            <div class="col-12 col-md-4 mt-1">
+                <img class="img-fluid img-thumbnail mx-auto d-block rounded" src="./img/pic8.jpg" alt="image" style="max-height: 300px;">
+            </div>
+        </div>
 
-		<!-- Main Navigation -->
+        <div class="mt-5 p-4 bg-white mx-auto rounded-20" style="width: 90%">
 
-		<div class="main_nav_container">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-right">
-						<div class="logo_container">
-							<a href="prototype.html">การดูแล<span>ผู้สูงอายุ</span></a>
-						</div>
-						<nav class="navbar">
-							<ul class="navbar_menu">
-								<li class="nav-item">
-									<a class="nav-link" href="barthelmain.html">Barthel ADL index</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="mainadl.html">Chula ADL Index</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="takecare.html">การดูแลผู้สูงอายุ</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="contact.html">contact</a>
-								</li>
-							</ul>
-							<div class="hamburger_container">
-								<i class="fa fa-bars" aria-hidden="true"></i>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
+            <p>
+                <span class="font-weight-bold text-brow">กลุ่มที่ 1 ผู้สูงอายุกลุ่มติดสังคม(well elder)</span>
+                <span class="d-block"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    เป็นผู้สูงอายุที่ช่วยเหลือตนเองได้ดี  สุขภาพดี ไม่มีโรคเรื้อรัง หรือมีภาวะเสี่ยงต่อ       
+                    การเกิดโรค หรือมีโรคเรื้อรัง 1-2 โรค แต่ควบคุมโรคได้  สามารถใช้ชีวิตในสังคมได้โดยอิสระ 
+                    มักเข้าร่วมกิจกรรมในสังคม และมีศักยภาพในการช่วยเหลือผู้อื่น และสังคมได้        
+                </span>
+            </p>
 
-	</header>
+            <p>
+                <span class="font-weight-bold text-brow " style="margin-top: 20px;">กลุ่มที่ 2 ผู้สูงอายุกลุ่มติดบ้าน (Home bound elder)</span>
+                <span class="d-block"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    เป็นผู้สูงอายุที่ช่วยเหลือตนเองได้บ้างหรือต้องการความช่วยเหลือจากผู้อื่นเพียงบางส่วน 
+                    มีโรคเรื้อรังหลายโรค หรือมีภาวะแทรกซ้อนและมีกลุ่มอาการสำคัญของ
+                    ผู้สูงอายุที่มีความจำกัดในการดำเนินชีวิตในสังคม
+       
+                </span>
+            </p>
 
-	<div class="row" style="padding-top: 120px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 border">
-					<div class="m-1 border">
-						<div class="">
-							<img class="w-100 rounded" src="images/main_pic.jpg">
-							<div class="p-2 text-center" style="background-color: #CACFD2;">
-								<h4>อีกเพียง 4 ปี ประเทศไทยจะเข้าสู่ "สังคมสูงสัยอย่างสมบูรณ์"</h4>
-							</div>
-						</div>
-					</div>
-					<div class="row m-1">
-						<div class="col-md-6 border">
-							<img class="w-100 rounded" src="images/data1.jpg">
-						</div>
-						<div class="col-md-6 border">
-							<img class="w-100 h-100 rounded" src="images/data2.jpg">
-						</div>
-					</div>
-
-				</div>
-				<div class="col-md-4 border">
-					<div class="m-0">
-						<img class="w-100" src="images/data3.jpg" style="height: 350px;">
-					</div>
-					<div class="mt-3">
-						<img class="w-100" src="images/data4.jpg">
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row pt-5">
-			<div class="col-md-4">
-				<div class="card">
-					<img class="card-img" src="images/1_social.jpg" alt="Card image" style="height: 300px;">
-					<a href="social.html" target="blank">
-					<div class="card-footer text-center">
-						<h3>กลุ่มติดสังคม</h3>
-					</div>
-					</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img class="card-img" src="images/2_home.jpg" alt="Card image" style="height: 300px;">
-					<a href="home.html" target="blank">
-						<div class="card-footer text-center">
-							<h3>กลุ่มติดบ้าน</h3>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card">
-					<img class="card-img" src="images/3_bed.jpg" alt="Card image" style="height: 300px;">
-					<a href="bed.html" target="blank">
-						<div class="card-footer text-center">
-							<h3>กลุ่มติดเตียง</h3>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+            <p>
+                <span class="font-weight-bold text-brow">กลุ่มที่ 3 ผู้สูงอายุกลุ่มติดเตียง (bed bound elder) </span>
+                <span class="d-block"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    เป็นผู้สูงอายุที่ไม่สามารถช่วยเหลือตนเองในการทำกิจวัตรประจำวันได้ ต้องการความช่วยเหลือ
+                    พึ่งพาจากผู้อื่นในการเคลื่อนย้ายและการทำกิจวัตรประจำวันพื้นฐาน มีโรคเรื้อรังหลายโรคมีการเจ็บป่วย 
+                    เรื้อรังมายาวนาน มีภาวะแทรกซ้อนจากโรค มีความพิการหรือทุพพลภาพ                    
+                </span>
+            </p>
 
 
-	<!-- Footer -->
+        </div>
 
-	<footer class="footer">
-		<div class="mt-5 p-lg-5 bg-secondary">
-			<div class="text-center">
-				@Happy Life Healthy Aging
-			</div>
-		</div>
-	</footer>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="text-center p-2">
+            <span class="d-block text-white font-weight-bold mb-3"> @Happy Life Healthy Aging </span>
+            <img src="./img/logo-nurse.jpg" class="img-fluid ml-3" alt="image logo">
+            <img src="./img/logo-ubu.jpg" class="img-fluid ml-3" alt="image logo">
+            <img src="./img/logo-facebook.jpg" class="img-fluid ml-3" alt="image logo">
+        </div>
+    </div>
 
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
+<script src="./jquery/jquery-3.2.1.min.js"></script>
+<script src="./bootstrap-4.2.1/js/popper.min.js"></script>
+<script src="./bootstrap-4.2.1/js/bootstrap.min.js"></script>
+<script src="./bootstrap-4.2.1/js/bootstrap-select.min.js"></script>
 
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
 </body>
-
 </html>

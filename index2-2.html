@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Cherry, and Bootstrap contributors">
+    <title>Title</title>
+
+    <!-- Bootstrap css -->
+    <link href="./bootstrap-4.2.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./bootstrap-4.2.1/css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Font awesome -->
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="./css/custom.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="container">
+
+<div class="page-body">
+    <!-- image header -->
+    <div>
+        <img src="./img/header.jpg" class="img-fluid w-100">
+    </div>
+    <!-- menu -->
+    <nav class="navbar navbar-expand-sm navbar-top">
+        <a class="navbar-brand text-white" href="#"> &nbsp; </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="text-white"><i class="fa fa-list"></i></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample03" style="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> หน้าหลัก <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index2.html"> การประเมินความสามารถ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html"> ภาพถ่ายกิจกรรม </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index4.html"> การแปรผลคะแนน </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index5.html"> ผู้พัฒนา </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- detail body -->
+    <div style="min-height: 350px;">
+
+        <div class="text-center font-weight-bold w-75 mx-auto p-2 text-brow rounded-20" style="background-image: url('./img/box-bg1.JPG'); background-size: 100% 100%;">
+            <h5 class="mt-1">การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันต่อเนื่องของผู้สูงอายุ </h5>
+            <h5> (instrumental activities of daily living: IADL) </h5>
+        </div>
+        <div class="mt-2 p-1 bg-white mx-auto rounded-20" style="width: 90%">
+            <div class="pl-3 pr-3 pb-5">
+                <p class="font-weight-bold"> แบบประเมินความสามารถเชิงปฏิบัติการ ดัชนีจุฬาเอดีแอล (Chula ADL Index) </p>
+                <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        เป็นความสามารถในการทำกิจกรรมที่ทับซ้อนขึ้นและเป็นกิจกรรมที่จำเป็น
+                        สำหรับการดำเนินชีวิตอย่างเป็นอิสระในชุมชนและการทำไม่ได้จะสะท้อน
+                        ภาวะพึ่งพาของผู้สูงอายุ บ่งบอกถึงความต้องการด้านการดูแลและ
+                        การจัดบริการช่วยเหลือดูแล เป็นตัวชี้วัดสำคัญที่่บอกให้ทราบถึง
+                        ภาวการณ์พึ่งพืงหรือสุขภาพร่างกายของผู้สูงอายุ
+                </span>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <img class="img-fluid img-thumbnail mx-auto d-block rounded" src="./img/iadl.jpg" alt="image" style="max-height: 200px;">
+        </div>
+
+        <div class="mt-2 w-50 d-block mx-auto">
+            <form method="post" action="index2-3.html">
+                <div class="form-group row">
+                    <label for="longtimeId" class="col-sm-2 col-form-label">ช่วงอายุ</label>
+                    <div class="col-sm-10">
+                        <select class="form-control-plaintext text-danger font-weight-bold border" id="longtimeId">
+                            <option value="">60-69 ปี (ผู้สูงอายุตอนต้น)</option>
+                            <option value="">70-79 ปี (ผู้สูงอายุตอนปลาย)</option>
+                            <option value="">80 ปีขึ้นไป (ผู้สูงอายุตอนปลาย)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="sexId" class="col-sm-2 col-form-label">เพศ</label>
+                    <div class="col-sm-10">
+                        <select class="form-control-plaintext text-danger font-weight-bold border" id="sexId">
+                            <option value="">หญิง</option>
+                            <option value="">ชาย</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nameId" class="col-sm-3 col-form-label">กรุณาระบุชื่อ</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-plaintext border" id="nameId" placeholder="ชื่อ">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-sm"> เริ่มทำแบบทดสอบ </button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="text-center p-2">
+            <span class="d-block text-white font-weight-bold mb-3"> @Happy Life Healthy Aging </span>
+            <img src="./img/logo-nurse.jpg" class="img-fluid ml-3" alt="image logo">
+            <img src="./img/logo-ubu.jpg" class="img-fluid ml-3" alt="image logo">
+            <img src="./img/logo-facebook.jpg" class="img-fluid ml-3" alt="image logo">
+        </div>
+    </div>
+
+</div>
+
+<script src="./jquery/jquery-3.2.1.min.js"></script>
+<script src="./bootstrap-4.2.1/js/popper.min.js"></script>
+<script src="./bootstrap-4.2.1/js/bootstrap.min.js"></script>
+<script src="./bootstrap-4.2.1/js/bootstrap-select.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    padding-bottom: 20px;
+
+}
+.page-body{
+    background-color: lightpink;
+}
+
+/*   text  */
+.text-brow{
+    color: saddlebrown;
+}
+
+/*   round  */
+.rounded-10{
+    border-radius: 10px;
+}
+.rounded-15{
+    border-radius: 15px;
+}
+.rounded-20{
+    border-radius: 20px;
+}
+/* ===== nav menu ===== */
+.navbar {
+    margin-bottom: 20px;
+}
+.navbar-top {
+    background-color: dodgerblue;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 10px 8px #888888;
+}
+
+.nav-item > a{
+    color: white;
+}
+.nav-item > a:hover{
+    background-color: #86cfda;
+    border-radius: 15px;
+
+}
+.nav-item > a.active{
+    background-color: #86cfda;
+    border-radius: 15px;
+}
+
+
+
+/* ===== footer ===== */
+.footer{
+    margin-top: 10px;
+    background-color: dodgerblue;
+}

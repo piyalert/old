@@ -1,102 +1,46 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: dev
+ * Date: 2/19/2020
+ * Time: 11:13 PM
+ */
 
-//include('controller/contactController.php');
-include dirname(__file__).'/controller/contactController.php';
+$MENU = 'score';
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <?php include('_main_header.php');?>
-
-    <link rel="stylesheet" type="text/css" href="plugins/datatables/dataTables.bootstrap4.css">
-
+    <?php include('_header.php');?>
 </head>
+<body class="container">
 
-<body>
+<div class="page-body">
+    <!-- image header -->
+    <?php include('_header_top.php');?>
 
-<div class="super_container">
+    <!-- menu -->
+    <?php include('_menu_top.php');?>
 
-    <!-- Header -->
-    <?php include('_main_menu_top.php');?>
-    <div class="container" style="padding-top: 120px;">
-        <hr>
-        <h4>แบบทดสอบ Barthel ADL</h4>
-        <div class="table-responsive">
-            <table class="this-table table table-striped table-sm">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>วันที่</th>
-                    <th>ช่วงอายุ</th>
-                    <th>ชื่อ</th>
-                    <th>เพศ</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($BARTHEL as $key=>$item): ?>
-                <tr>
-                    <td><?php echo ($key+1); ?></td>
-                    <td><?php echo $item['create_at']; ?></td>
-                    <td><?php echo $item['type']; ?></td>
-                    <td><?php echo $item['name']; ?></td>
-                    <td><?php echo $item['gender']=='male'?'ชาย':'หญิง';?></td>
-                </tr>
-                <?php endforeach;?>
-                </tbody>
-            </table>
-        </div>
+    <!-- detail body -->
+    <div style="min-height: 350px;">
 
-        <hr>
-        <h4>แบบทดสอบ Chula ADL</h4>
-        <div class="table-responsive">
-            <table class="this-table table table-striped table-sm">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>วันที่</th>
-                    <th>ช่วงอายุ</th>
-                    <th>ชื่อ</th>
-                    <th>เพศ</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($CHULA as $key=>$item): ?>
-                    <tr>
-                        <td><?php echo ($key+1); ?></td>
-                        <td><?php echo $item['create_at']; ?></td>
-                        <td><?php echo $item['type']; ?></td>
-                        <td><?php echo $item['name']; ?></td>
-                        <td><?php echo $item['gender']=='male'?'ชาย':'หญิง';?></td>
-                    </tr>
-                <?php endforeach;?>
-                </tbody>
-            </table>
-        </div>
+        <h1>ยังไม่ออกแบบมาให้</h1>
 
     </div>
 
-    <!-- Footer -->
-    <?php include('_main_footer.php');?>
+
+    <!-- footer -->
+    <?php include('_footer.php');?>
 
 </div>
 
-
-<?php include('_main_script.php');?>
-
-<!-- Javascript Data Tables -->
-<script type="text/javascript" src="plugins/datatables/jquery.dataTables.js"></script>
-<script type="text/javascript" src="plugins/datatables/dataTables.bootstrap4.js"></script>
-
-
-<script>
-    //js data table
-    $(document).ready(function() {
-        $('.this-table').DataTable();
-    } );
-</script>
+<!-- script -->
+<?php include('_script.php');?>
 
 
 </body>
 </html>
+
