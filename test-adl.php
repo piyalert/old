@@ -61,9 +61,9 @@ unset($_SESSION['T_SELECT']);
                     <label for="longtimeId" class="col-sm-2 col-form-label">ช่วงอายุ</label>
                     <div class="col-sm-10">
                         <select class="form-control-plaintext text-danger font-weight-bold border" name="age" id="longtimeId">
-                            <option value="">60-69 ปี (ผู้สูงอายุตอนต้น)</option>
-                            <option value="">70-79 ปี (ผู้สูงอายุตอนปลาย)</option>
-                            <option value="">80 ปีขึ้นไป (ผู้สูงอายุตอนปลาย)</option>
+                            <option value="1">60-69 ปี (ผู้สูงอายุตอนต้น)</option>
+                            <option value="2">70-79 ปี (ผู้สูงอายุตอนปลาย)</option>
+                            <option value="3">80 ปีขึ้นไป (ผู้สูงอายุตอนปลาย)</option>
                         </select>
                     </div>
                 </div>
@@ -71,8 +71,8 @@ unset($_SESSION['T_SELECT']);
                     <label for="sexId" class="col-sm-2 col-form-label">เพศ</label>
                     <div class="col-sm-10">
                         <select class="form-control-plaintext text-danger font-weight-bold border" name="gender" id="sexId">
-                            <option value="">หญิง</option>
-                            <option value="">ชาย</option>
+                            <option value="f">หญิง</option>
+                            <option value="m">ชาย</option>
                         </select>
                     </div>
                 </div>

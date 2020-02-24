@@ -16,6 +16,7 @@ if($input_name!==''){
     $_SESSION['U_NAME'] = $input_name;
     $_SESSION['U_AGE']= $input_age;
     $_SESSION['U_GENDER'] = $input_gender;
+
     $_SESSION['T_EQ'] = 1;
     $_SESSION['T_SELECT'] = array();
 }

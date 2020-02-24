@@ -25,8 +25,12 @@ $MENU = isset($MENU)?$MENU:'';
             <li class="nav-item">
                 <a class="nav-link <?php echo $MENU=='image'?'active':'';?>" href="/oldperson/image.php"> ภาพถ่ายกิจกรรม </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link <?php echo $MENU=='score'?'active':'';?>" href="/oldperson/score.php"> การแปรผลคะแนน </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle <?php echo $MENU=='score'?'active':'';?>" href="#" id="navbarDropdownScore" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> การแปรผลคะแนน </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownScore">
+                    <a class="dropdown-item" href="/oldperson/score.php">การปฏิบัติกิจวัตรประจำวันพื้นฐาน:ALD</a>
+                    <a class="dropdown-item" href="/oldperson/score.php">การปฏิบัติกิจวัตรประจำวันต่อเนื่อง:IALD</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link <?php echo $MENU=='about'?'active':'';?>" href="/oldperson/about.php"> ผู้พัฒนา </a>
