@@ -29,7 +29,7 @@ $MENU = isset($MENU)?$MENU:'';
                 <a class="nav-link dropdown-toggle <?php echo $MENU=='score'?'active':'';?>" href="#" id="navbarDropdownScore" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> การแปรผลคะแนน </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownScore">
                     <a class="dropdown-item" href="/oldperson/score.php">การปฏิบัติกิจวัตรประจำวันพื้นฐาน:ALD</a>
-                    <a class="dropdown-item" href="/oldperson/score.php">การปฏิบัติกิจวัตรประจำวันต่อเนื่อง:IALD</a>
+                    <a class="dropdown-item" href="/oldperson/score-iadl.php">การปฏิบัติกิจวัตรประจำวันต่อเนื่อง:IALD</a>
                 </div>
             </li>
             <li class="nav-item">

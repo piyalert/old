@@ -11,16 +11,19 @@ $MENU = 'score';
 $g11 = 0;
 $g12 = 0;
 $g13 = 0;
+$g14 = 0;
 
 $g21 = 0;
 $g22 = 0;
 $g23 = 0;
+$g24 = 0;
 
 $g31 = 0;
 $g32 = 0;
 $g33 = 0;
+$g34 = 0;
 
-include dirname(__file__).'/controller/graphAdl.php';
+include dirname(__file__).'/controller/graphIadl.php';
 
 ?>
 
@@ -56,14 +59,17 @@ include dirname(__file__).'/controller/graphAdl.php';
     <input id="idD-g11" type="text" value="<?php echo $g11; ?>">
     <input id="idD-g12" type="text" value="<?php echo $g12; ?>">
     <input id="idD-g13" type="text" value="<?php echo $g13; ?>">
+    <input id="idD-g14" type="text" value="<?php echo $g14; ?>">
 
     <input id="idD-g21" type="text" value="<?php echo $g21; ?>">
     <input id="idD-g22" type="text" value="<?php echo $g22; ?>">
     <input id="idD-g23" type="text" value="<?php echo $g23; ?>">
+    <input id="idD-g24" type="text" value="<?php echo $g24; ?>">
 
     <input id="idD-g31" type="text" value="<?php echo $g31; ?>">
     <input id="idD-g32" type="text" value="<?php echo $g32; ?>">
     <input id="idD-g33" type="text" value="<?php echo $g33; ?>">
+    <input id="idD-g34" type="text" value="<?php echo $g34; ?>">
 
 </div>
 <!-- script -->
@@ -76,51 +82,49 @@ include dirname(__file__).'/controller/graphAdl.php';
         let chart = new CanvasJS.Chart("chartContainer", {
             animationEnabled: true,
             title:{
-                text: "basic activities of daily living: ADL",
+                text: "instrumental activities of daily living: IADL",
                 fontFamily: "arial black",
                 fontSize: 20,
-                fontColor: "#695A42"
             },
             axisY:{
                 valueFormatString:"#0",
-                gridColor: "#B6B1A8",
-                tickColor: "#B6B1A8"
             },
             toolTip: {
                 shared: true,
                 content: toolTipContent
             },
-            data: [{
-                type: "stackedColumn",
-                showInLegend: true,
-                color: "#696661",
-                name: "60-69 ปี",
-                dataPoints: [
-                    { y: 1, label: "กลุ่มติดเตียง(0-4)" },
-                    { y: 9, label: "กลุ่มติดบ้าน(5-8)" },
-                    { y: 15, label: "กลุ่มติดสังคม(9 ขึ้นไป)" }
-                ]
+            data: [
+                {
+                    type: "stackedColumn",
+                    showInLegend: true,
+                    name: "60-69 ปี",
+                    dataPoints: [
+                        { y: 1, label: "ภาวะพี่งพาโดยสมบูรณ์(0-4)" },
+                        { y: 9, label: "ภาวะพึ่งพารุนแรง(5-8)" },
+                        { y: 15, label: "ภาวะพึ่งปานกลาง(9-11)" },
+                        { y: 15, label: "ไม่เป็นการพึ่งพา(12 ขึ้นไป)" }
+                    ]
                 },
                 {
                     type: "stackedColumn",
                     showInLegend: true,
                     name: "70-79 ปี",
-                    color: "#EDCA93",
                     dataPoints: [
-                        { y: 3, label: "กลุ่มติดเตียง(0-4)" },
-                        { y: 0, label: "กลุ่มติดบ้าน(5-8)" },
-                        { y: 10, label: "กลุ่มติดสังคม(9 ขึ้นไป)" }
+                        { y: 1, label: "ภาวะพี่งพาโดยสมบูรณ์(0-4)" },
+                        { y: 9, label: "ภาวะพึ่งพารุนแรง(5-8)" },
+                        { y: 15, label: "ภาวะพึ่งปานกลาง(9-11)" },
+                        { y: 15, label: "ไม่เป็นการพึ่งพา(12 ขึ้นไป)" }
                     ]
                 },
                 {
                     type: "stackedColumn",
                     showInLegend: true,
                     name: "80 ปีขึ้นไป",
-                    color: "#695A42",
                     dataPoints: [
-                        { y: 0, label: "กลุ่มติดเตียง(0-4)" },
-                        { y: 8, label: "กลุ่มติดบ้าน(5-8)" },
-                        { y: 9, label: "กลุ่มติดสังคม(9 ขึ้นไป)" }
+                        { y: 1, label: "ภาวะพี่งพาโดยสมบูรณ์(0-4)" },
+                        { y: 9, label: "ภาวะพึ่งพารุนแรง(5-8)" },
+                        { y: 15, label: "ภาวะพึ่งปานกลาง(9-11)" },
+                        { y: 15, label: "ไม่เป็นการพึ่งพา(12 ขึ้นไป)" }
                     ]
                 }]
         });
@@ -128,27 +132,33 @@ include dirname(__file__).'/controller/graphAdl.php';
         let g11 = $("#idD-g11").val();
         let g12 = $("#idD-g12").val();
         let g13 = $("#idD-g13").val();
+        let g14 = $("#idD-g14").val();
 
         let g21 = $("#idD-g21").val();
         let g22 = $("#idD-g22").val();
         let g23 = $("#idD-g23").val();
+        let g24 = $("#idD-g24").val();
 
         let g31 = $("#idD-g31").val();
         let g32 = $("#idD-g32").val();
         let g33 = $("#idD-g33").val();
+        let g34 = $("#idD-g34").val();
 
 
         chart.options.data[0].dataPoints[0].y = parseInt(g11);
         chart.options.data[0].dataPoints[1].y = parseInt(g12);
         chart.options.data[0].dataPoints[2].y = parseInt(g13);
+        chart.options.data[0].dataPoints[3].y = parseInt(g14);
 
         chart.options.data[1].dataPoints[0].y = parseInt(g21);
         chart.options.data[1].dataPoints[1].y = parseInt(g22);
         chart.options.data[1].dataPoints[2].y = parseInt(g23);
+        chart.options.data[1].dataPoints[3].y = parseInt(g24);
 
         chart.options.data[2].dataPoints[0].y = parseInt(g31);
         chart.options.data[2].dataPoints[1].y = parseInt(g32);
         chart.options.data[2].dataPoints[2].y = parseInt(g33);
+        chart.options.data[2].dataPoints[3].y = parseInt(g34);
 
         chart.render();
 
