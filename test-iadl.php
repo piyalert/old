@@ -38,12 +38,14 @@ $MENU = 'test';
         </div>
         <div class="mt-2 p-1 bg-white mx-auto rounded-20" style="width: 90%">
             <div class="pl-3 pr-3 pb-5">
-                <p class="font-weight-bold"> แบบประเมิน ดัชนีบาร์ ไอ เอดีแอล (instrumental activities of daily living) </p>
+                <!-- <p class="font-weight-bold"> แบบประเมิน ดัชนีบาร์ ไอ เอดีแอล (instrumental activities of daily living) </p> -->
                 <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        โดยประเมินว่าทำกิจกรรมเหล่านี้ได้ด้วยตนเองทั้งหมด หรือทำได้โดยมีผู้ช่วย
-                        หรือทำไม่ได้เลย ซึ่งการต้องการผู้ช่วยและการทำไม่ได้จะสะท้อนภาวะพึ่งพา
-                        ของผู้สูงอายุ บ่งบอกถึงความต้องการด้านการดูแลและการจัดการบริการช่วยเหลือดูแล
-                        เป็นตัวชี้วัดสำคัญที่บอกให้ทราบถึงภาวการณ์พึ่งพิงหรือสุขภาพร่างกายของผู้สูงอายุ
+                    แบบประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันต่อเนื่อง ที่นิยมใช้ในการประเมินของผู้สูงอายุไทย 
+                    คือ  การประเมินความสามารถเชิงปฏิบัติ ดัชนีจุฬาเอดีแอล (Chula ADL Index)  
+                    เป็นความสามารถในการทำกิจกรรมที่ซับซ่อนขึ้นและเป็นกิจกรรมที่จำเป็น  
+                    สำหรับการดำเนินชีวิตอย่างเป็นอิสระในชุมชน  และการทำไม่ได้จะสะท้อนภาวะพึ่งพาของผู้สูงอายุ  
+                    บ่งบอกถึงความต้องการด้านการดูแลและการจัดบริการช่วยเหลือดูแล 
+                    เป็นตัวชี้วัดสำคัญที่บอกให้ทราบถึงภาวการณ์พึ่งพิงหรือสุขภาพร่างกายของผู้สูงอายุ
                 </span>
             </div>
         </div>
@@ -59,7 +61,7 @@ $MENU = 'test';
                     <div class="col-sm-10">
                         <select name="age" class="form-control-plaintext text-danger font-weight-bold border" id="longtimeId">
                             <option value="1">60-69 ปี (ผู้สูงอายุตอนต้น)</option>
-                            <option value="2">70-79 ปี (ผู้สูงอายุตอนปลาย)</option>
+                            <option value="2">70-79 ปี (ผู้สูงอายุตอนกลาง)</option>
                             <option value="3">80 ปีขึ้นไป (ผู้สูงอายุตอนปลาย)</option>
                         </select>
                     </div>
@@ -67,16 +69,17 @@ $MENU = 'test';
                 <div class="form-group row">
                     <label for="sexId" class="col-sm-2 col-form-label">เพศ</label>
                     <div class="col-sm-10">
-                        <select name="gender" class="form-control-plaintext text-danger font-weight-bold border" id="sexId">
+                        <select name="gender" class="form-control-plaintext text-danger font-weight-bold border" class="form-control-plaintext border" id="sexId">
                             <option value="f">หญิง</option>
                             <option value="m">ชาย</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="nameId" class="col-sm-3 col-form-label">กรุณาระบุชื่อ</label>
+                    <!-- <label for="nameId" class="col-sm-3 col-form-label">กรุณาระบุชื่อ</label> -->
                     <div class="col-sm-9">
-                        <input name="name" type="text" class="form-control-plaintext border" id="nameId" placeholder="ชื่อ" autocomplete="off" required>
+                        <!-- <input name="name" type="text" class="form-control-plaintext border" id="nameId" placeholder="ชื่อ" autocomplete="off" required> -->
+                        <input name="name" type="text" class=" d-none" value = "-" form-control-plaintext border" id="nameId" placeholder="ชื่อ" autocomplete="off" required>
                     </div>
                 </div>
                 <div class="text-center">

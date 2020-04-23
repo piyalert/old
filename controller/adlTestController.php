@@ -106,8 +106,8 @@ $TESTS[]=array(
     'test_top'=>'ข้อที่ 8 การอาบน้ำ (Bathing)',
     'test_title'=>'',
     'choice'=>array(
-        array( 'score'=>0,'src'=>'images/bar8-1.jpg','text'=>'ต้องมีคนช่วยหรือทำให้') ,
-        array( 'score'=>1,'src'=>'images/bar8-2.jpg','text'=>'อาบน้ำเองได้')
+        array( 'score'=>0,'src'=>'images/bar8-2.jpg','text'=>'ต้องมีคนช่วยหรือทำให้') ,
+        array( 'score'=>1,'src'=>'images/bar8-1.jpg','text'=>'อาบน้ำเองได้')
     )
 );
 $TESTS[]=array(

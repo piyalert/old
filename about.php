@@ -35,6 +35,14 @@ $MENU = 'about';
                 <span class="font-weight-bold text-brow">คณะพยาบาลศาสตร์ มหาวิทยาลัยอุบลราชธานี</span> <br><br>
                 <span class="font-weight-bold text-brow">โรงเรียนสร้างสุขผู้สูงอายุ  คณะพยาบาลศาสตร์ มหาวิทยาลัยอุบลราชธานี</span><br>
             </p>
+            <br><br>
+            <img src="./img/contact2.jpg" height="200px" width="200px"><br><br>
+            <p>
+                <span class="font-weight-bold text-brow">ผู้ช่วยศาสตราจารย์ ดร. อธิพงศ์ สุริยา</span> <br><br>
+                <span class="font-weight-bold text-brow">ภาควิชาวิศวกรรมไฟฟ้าและอิเล็กทรอนิกส์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยอุบลราชธานี</span> <br><br>
+                <span class="font-weight-bold text-brow">ผู้อำนวยการสำนักคอมพิวเตอร์และเครือข่าย มหาวิทยาลัยอุบลราชธานี <br>
+                                                         ผู้อำนวยการสำนักวิทยบริการ มหาวิทยาลัยอุบลราชธานี</span><br>
+            </p>
         </div>
     </div>
 

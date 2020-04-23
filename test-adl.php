@@ -43,6 +43,8 @@ unset($_SESSION['T_SELECT']);
             <div class="pl-3 pr-3 pb-5">
                 <p class="font-weight-bold"> แบบประเมิน ดัชนีบาร์ เทล เอดีแอล (Barthel ADL index) </p>
                 <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        แบบประเมินที่ใช้ในการประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐานของผู้สูงอายุ 
+                        ที่นิยมใช้ในการประเมินของผู้สูงอายุไทย  คือ ดัชนีบาร์ เทล เอดีแอล (Barthel ADL index)  
                         โดยประเมินว่าทำกิจกรรมเหล่านี้ได้ด้วยตนเองทั้งหมด หรือทำได้โดยมีผู้ช่วย
                         หรือทำไม่ได้เลย ซึ่งการต้องการผู้ช่วยและการทำไม่ได้จะสะท้อนภาวะพึ่งพา
                         ของผู้สูงอายุ บ่งบอกถึงความต้องการด้านการดูแลและการจัดการบริการช่วยเหลือดูแล
@@ -62,7 +64,7 @@ unset($_SESSION['T_SELECT']);
                     <div class="col-sm-10">
                         <select class="form-control-plaintext text-danger font-weight-bold border" name="age" id="longtimeId">
                             <option value="1">60-69 ปี (ผู้สูงอายุตอนต้น)</option>
-                            <option value="2">70-79 ปี (ผู้สูงอายุตอนปลาย)</option>
+                            <option value="2">70-79 ปี (ผู้สูงอายุตอนกลาง)</option>
                             <option value="3">80 ปีขึ้นไป (ผู้สูงอายุตอนปลาย)</option>
                         </select>
                     </div>
@@ -77,9 +79,9 @@ unset($_SESSION['T_SELECT']);
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="nameId" class="col-sm-3 col-form-label">กรุณาระบุชื่อ</label>
+                    <!-- <label for="nameId" class="col-sm-3 col-form-label">กรุณาระบุชื่อ</label> -->
                     <div class="col-sm-9">
-                        <input type="text" class="form-control-plaintext border" id="nameId" name="name" placeholder="ชื่อ" autocomplete="off" required>
+                    <input name="name" type="text" class=" d-none" value = "-" form-control-plaintext border" id="nameId" placeholder="ชื่อ" autocomplete="off" required>
                     </div>
                 </div>
                 <div class="text-center">

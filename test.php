@@ -31,7 +31,7 @@ $MENU = 'test';
         <div class="mt-5 p-1 bg-white mx-auto rounded-20" style="width: 90%">
             <div class="text-center mt-4">
                 <a class="text-brow" href="/oldperson/test-adl.php">
-                    <span class="d-block"> ประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐานของผุ้สูงอายุ </span>
+                    <span class="d-block"> การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐานของผู้สูงอายุ </span>
                     <small>( basic activities of daily living: ADL )</small>
                 </a>
             </div>

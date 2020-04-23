@@ -39,7 +39,8 @@ $MENU = 'test';
 
         <div class="mt-5 p-1 bg-white mx-auto rounded <?php echo ($score<=4)?'':'d-none';?>" style="width: 90%">
             <div class="text-center">
-                <p class="text-brow font-weight-bold"> ผู้สูงอายุ (กลุ่มติดเตียง) </p>
+                <p class="text-brow font-weight-bold"> คะแนนที่ได้ <?php echo ($score);?> คะแนน </p>
+                <p class="text-brow font-weight-bold"> อยู่ในกลุ่ม "ผู้สูงอายุ (กลุ่มติดเตียง)" </p>
                 <p class="text-brow font-weight-bold"> ผู้สูงอายุที่พึ่งตนเองไม่ได้ ช่วยเหลือตนเองไม่ได้ พิการ หรือทุพพลภาพ </p>
                 <p class="text-brow font-weight-bold"> มีผลรวมคะแนน ADL อยู่ในช่วง 0-4 คะแนน </p>
             </div>
@@ -56,7 +57,8 @@ $MENU = 'test';
 
         <div class="mt-5 p-1 bg-white mx-auto rounded <?php echo ($score>=5 && $score<=11)?'':'d-none';?>" style="width: 90%">
             <div class="text-center">
-                <p class="text-brow font-weight-bold"> ผู้สูงอายุ (กลุ่มติดบ้าน) </p>
+                <p class="text-brow font-weight-bold"> คะแนนที่ได้ <?php echo ($score);?> คะแนน </p>
+                <p class="text-brow font-weight-bold"> อยู่ในกลุ่ม "ผู้สูงอายุ (กลุ่มติดบ้าน)" </p>
                 <p class="text-brow font-weight-bold"> ผู้สูงอายุที่ดูแลตนเองได้บ้าง ช่วยเหลือตนเองได้บ้าง </p>
                 <p class="text-brow font-weight-bold"> มีผลรวมคะแนน ADL อยู่ในช่วง 5-11 คะแนน </p>
             </div>
@@ -73,7 +75,8 @@ $MENU = 'test';
 
         <div class="mt-5 p-1 bg-white mx-auto rounded <?php echo ($score>=12)?'':'d-none';?>" style="width: 90%">
             <div class="text-center">
-                <p class="text-brow font-weight-bold"> ผู้สูงอายุ (กลุ่มติดสังคม) </p>
+                <p class="text-brow font-weight-bold"> คะแนนที่ได้ <?php echo ($score);?> คะแนน </p>
+                <p class="text-brow font-weight-bold"> อยู่ในกลุ่ม "ผู้สูงอายุ (กลุ่มติดสังคม)" </p>
                 <p class="text-brow font-weight-bold"> ผู้สูงอายุที่ดูแลตนเองได้ ช่วยเหลือผุ้อื่น ชุมชนและสังคมได้ </p>
                 <p class="text-brow font-weight-bold"> มีผลรวม คะแนน ADL ตั้งแต่ 12 คะแนนขึ้นไป </p>
             </div>

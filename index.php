@@ -54,6 +54,15 @@ $MENU = 'index';
 
         <div class="mt-5 p-4 bg-white mx-auto rounded-20" style="width: 90%">
 
+        <p>
+                <span class="font-weight-bold text-brow">การดูแลสุขภาพผู้สูงอายุระยะยาว  (Long  Term Care)</span>
+                <span class="d-block"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                เป็นส่วนสำคัญของระบบสุขภาพ  สังคมและชุมชน เพื่อดูแลให้ผู้สูงอายุดำรงชีวิตอยู่อย่างมีศักดิ์ศรี
+                และมีคุณภาพชีวิตที่ดี ผู้สูงอายุในปัจจุบันมีการแบ่งกลุ่มตามลักษณะสุขภาพและสังคมของผู้สูงอายุ 
+                แบ่งเป็น 3 กลุ่มผู้สูงอายุของไทย  
+                </span>
+            </p>
+
             <p>
                 <span class="font-weight-bold text-brow">กลุ่มที่ 1 ผู้สูงอายุกลุ่มติดสังคม(well elder)</span>
                 <span class="d-block"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
