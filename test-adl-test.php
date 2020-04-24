@@ -123,7 +123,7 @@ include dirname(__file__).'/controller/adlTestController.php';
     }
 
     function nextChoice(choice,sq) {
-        var this_url = '/oldperson/test-adl-test.php';
+        var this_url = '/elderly/test-adl-test.php';
         var form = $(document.createElement('form'));
         $(form).attr("action",this_url);
         $(form).attr("method","POST");

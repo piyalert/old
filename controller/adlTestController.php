@@ -23,7 +23,7 @@ if($input_name!==''){
 
 
 if(!isset($_SESSION['T_EQ'])){
-    header( "location: /oldperson/test-adl.php" );
+    header( "location: /elderly/test-adl.php" );
     exit(0);
 }
 
@@ -153,7 +153,7 @@ if($sq!='-' && $select!='-'){
         $type = $_SESSION['U_AGE'];
         $gender = $_SESSION['U_GENDER'];
         $FileJson->writeFileBarthelADL($name,$gender,$type,$score);
-        header( "location: /oldperson/test-adl-score.php" );
+        header( "location: /elderly/test-adl-score.php" );
         exit(0);
     }else{
         $_SESSION['T_SELECT'] = $ss;

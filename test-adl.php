@@ -58,7 +58,7 @@ unset($_SESSION['T_SELECT']);
         </div>
 
         <div class="mt-2 w-50 d-block mx-auto">
-            <form method="post" action="/oldperson/test-adl-test.php">
+            <form method="post" action="/elderly/test-adl-test.php">
                 <div class="form-group row">
                     <label for="longtimeId" class="col-sm-2 col-form-label">ช่วงอายุ</label>
                     <div class="col-sm-10">

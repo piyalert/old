@@ -17,23 +17,23 @@ $MENU = isset($MENU)?$MENU:'';
     <div class="navbar-collapse collapse" id="navbarsExample03" style="">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link <?php echo $MENU=='index'?'active':'';?>" href="/oldperson/index.php"> หน้าหลัก <span class="sr-only">(current)</span></a>
+                <a class="nav-link <?php echo $MENU=='index'?'active':'';?>" href="/elderly/index.php"> หน้าหลัก <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?php echo $MENU=='test'?'active':'';?>" href="/oldperson/test.php"> การประเมินความสามารถ </a>
+                <a class="nav-link <?php echo $MENU=='test'?'active':'';?>" href="/elderly/test.php"> การประเมินความสามารถ </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?php echo $MENU=='image'?'active':'';?>" href="/oldperson/image.php"> ภาพถ่ายกิจกรรม </a>
+                <a class="nav-link <?php echo $MENU=='image'?'active':'';?>" href="/elderly/image.php"> ภาพถ่ายกิจกรรม </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle <?php echo $MENU=='score'?'active':'';?>" href="#" id="navbarDropdownScore" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> การแปรผลคะแนน </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownScore">
-                    <a class="dropdown-item" href="/oldperson/score.php">การปฏิบัติกิจวัตรประจำวันพื้นฐาน:ALD</a>
-                    <a class="dropdown-item" href="/oldperson/score-iadl.php">การปฏิบัติกิจวัตรประจำวันต่อเนื่อง:IALD</a>
+                    <a class="dropdown-item" href="/elderly/score.php">การปฏิบัติกิจวัตรประจำวันพื้นฐาน:ALD</a>
+                    <a class="dropdown-item" href="/elderly/score-iadl.php">การปฏิบัติกิจวัตรประจำวันต่อเนื่อง:IALD</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?php echo $MENU=='about'?'active':'';?>" href="/oldperson/about.php"> ผู้พัฒนา </a>
+                <a class="nav-link <?php echo $MENU=='about'?'active':'';?>" href="/elderly/about.php"> ผู้พัฒนา </a>
             </li>
         </ul>
     </div>

@@ -30,13 +30,13 @@ $MENU = 'test';
 
         <div class="mt-5 p-1 bg-white mx-auto rounded-20" style="width: 90%">
             <div class="text-center mt-4">
-                <a class="text-brow" href="/oldperson/test-adl.php">
+                <a class="text-brow" href="/elderly/test-adl.php">
                     <span class="d-block"> การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันพื้นฐานของผู้สูงอายุ </span>
                     <small>( basic activities of daily living: ADL )</small>
                 </a>
             </div>
             <div class="text-center mt-4 mb-4">
-                <a class="text-brow" href="/oldperson/test-iadl.php">
+                <a class="text-brow" href="/elderly/test-iadl.php">
                     <span class="d-block"> การประเมินความสามารถในการปฏิบัติกิจวัตรประจำวันต่อเนื่องของผู้สูงอายุ  </span>
                     <small>( instrumental activities of daily living: IADL )</small>
                 </a>
